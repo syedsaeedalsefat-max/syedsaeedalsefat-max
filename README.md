@@ -60,7 +60,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/streak-stats.svg" alt="GitHub Streak" width="85%"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=syedsaeedalsefat-max&theme=tokyonight&hide_border=true&background=0d1117&ring=388bfd&fire=ff4500&currStreakLabel=58a6ff&sideLabels=70A5FD&sideNums=70A5FD&dates=38BDAE&stroke=388bfd" alt="GitHub Streak" width="85%"/>
 </p>
 
 <p align="center">
