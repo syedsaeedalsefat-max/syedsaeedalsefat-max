@@ -11,15 +11,15 @@
   <img src="assets/icons/email.svg" width="36" height="36" alt="Email"/>
 </a>
 &nbsp;&nbsp;
-<a href="https://linkedin.com" target="_blank" title="LinkedIn">
+<a href="https://github.com/syedsaeedalsefat-max" target="_blank" title="LinkedIn">
   <img src="assets/icons/linkedin.svg" width="36" height="36" alt="LinkedIn"/>
 </a>
 &nbsp;&nbsp;
-<a href="https://discord.com" target="_blank" title="Discord">
+<a href="https://github.com/syedsaeedalsefat-max" target="_blank" title="Discord">
   <img src="assets/icons/discord.svg" width="36" height="36" alt="Discord"/>
 </a>
 &nbsp;&nbsp;
-<a href="https://facebook.com" target="_blank" title="Facebook">
+<a href="https://github.com/syedsaeedalsefat-max" target="_blank" title="Facebook">
   <img src="assets/icons/facebook.svg" width="36" height="36" alt="Facebook"/>
 </a>
 
