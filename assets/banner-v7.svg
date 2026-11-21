@@ -1,400 +1,91 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     viewBox="0 0 1280 440" width="1280" height="440"
-     role="img" aria-label="Syed Saeed Al Sefat - Cybersecurity and Python Specialist">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 440" width="1280" height="440" role="img"
+     aria-label="Syed Saeed Al Sefat - Cybersecurity and Python Specialist">
 <title>Syed Saeed Al Sefat</title>
 <defs>
-  <linearGradient id="bd" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0" stop-color="#1f6d5f"/><stop offset=".5" stop-color="#1e3049"/><stop offset="1" stop-color="#3a6fd2"/>
-  </linearGradient>
-  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#0b0f17"/><stop offset="1" stop-color="#121426"/>
-  </linearGradient>
-
-  <!-- Cyber name gradient: electric green to teal (hacker terminal style) -->
-  <linearGradient id="cyberGrad" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0"   stop-color="#00ff41"/>
-    <stop offset="0.3" stop-color="#39ff14"/>
-    <stop offset="0.6" stop-color="#00e5cc"/>
-    <stop offset="1"   stop-color="#00ff41"/>
-    <animateTransform attributeName="gradientTransform" type="translate"
-      from="-0.4 0" to="0.6 0" dur="5s" repeatCount="indefinite"/>
-  </linearGradient>
-
-  <radialGradient id="glow">
-    <stop offset="0" stop-color="#5b8cff" stop-opacity=".22"/>
-    <stop offset="1" stop-color="#5b8cff" stop-opacity="0"/>
-  </radialGradient>
-  <radialGradient id="radarglow">
-    <stop offset="0" stop-color="#3fb9a8" stop-opacity=".09"/>
-    <stop offset="1" stop-color="#3fb9a8" stop-opacity="0"/>
-  </radialGradient>
-
-  <!-- Clean glow filter (no distortion) -->
-  <filter id="halo" x="-200%" y="-200%" width="500%" height="500%">
-    <feGaussianBlur stdDeviation="3.5"/>
-  </filter>
-  <!-- Green terminal glow for name -->
-  <filter id="termGlow" x="-15%" y="-40%" width="130%" height="180%">
-    <feGaussianBlur stdDeviation="5" result="blur"/>
-    <feFlood flood-color="#00ff41" flood-opacity="0.4" result="color"/>
-    <feComposite in="color" in2="blur" operator="in" result="glow"/>
-    <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
-  </filter>
-  <!-- Drop shadow for text depth -->
-  <filter id="textShadow" x="-5%" y="-20%" width="110%" height="140%">
-    <feDropShadow dx="2" dy="4" stdDeviation="3" flood-color="#003300" flood-opacity="0.8"/>
-  </filter>
-
-  <pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse">
-    <circle cx="2" cy="2" r="1" fill="#fff" opacity=".06"/>
-  </pattern>
-  <clipPath id="card"><rect width="1280" height="440" rx="26"/></clipPath>
+<linearGradient id="bd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1f6d5f"/><stop offset=".5" stop-color="#1e3049"/><stop offset="1" stop-color="#3a6fd2"/></linearGradient>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b0f17"/><stop offset="1" stop-color="#121426"/></linearGradient>
+<linearGradient id="nameG" x1="0" y1="0" x2="1" y2="0" spreadMethod="reflect">
+ <stop offset="0" stop-color="#00e5cc"/><stop offset=".5" stop-color="#7df9ff"/><stop offset="1" stop-color="#5b8cff"/>
+ <animateTransform attributeName="gradientTransform" type="translate" from="-0.5 0" to="0.5 0" dur="6s" repeatCount="indefinite"/></linearGradient>
+<linearGradient id="barG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#00e5cc"/><stop offset="1" stop-color="#5b8cff"/></linearGradient>
+<radialGradient id="glow"><stop offset="0" stop-color="#5b8cff" stop-opacity=".2"/><stop offset="1" stop-color="#5b8cff" stop-opacity="0"/></radialGradient>
+<pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1" fill="#fff" opacity=".05"/></pattern>
+<filter id="gl" x="-10%" y="-40%" width="120%" height="180%"><feGaussianBlur stdDeviation="4" result="b"/><feFlood flood-color="#00e5cc" flood-opacity=".35" result="c"/><feComposite in="c" in2="b" operator="in" result="g"/><feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="halo" x="-200%" y="-200%" width="500%" height="500%"><feGaussianBlur stdDeviation="3.5"/></filter>
+<clipPath id="card"><rect width="1280" height="440" rx="26"/></clipPath>
+<clipPath id="barFill"><rect x="400" y="203" height="34" width="0">
+  <animate attributeName="width" calcMode="discrete" dur="15.5s" repeatCount="indefinite" values="0.0;40.2;80.4;120.6;160.8;201.0;241.2;281.4;321.6;361.8;402.0;442.2;482.4;522.6;562.8;603.0;643.2;683.4;723.6;763.8;804.0;804.0" keyTimes="0;0.03461;0.04941;0.06335;0.07611;0.08748;0.0974;0.10593;0.11328;0.11977;0.12581;0.13185;0.13834;0.14568;0.15421;0.16413;0.1755;0.18827;0.20221;0.21701;0.23226;1"/></rect></clipPath>
+<clipPath id="pctWin"><rect x="170" y="205" width="120" height="40"/></clipPath>
+<clipPath id="typeClip"><rect x="76" y="152" height="76" width="0">
+  <animate attributeName="width" calcMode="discrete" dur="15.5s" repeatCount="indefinite" values="0.0;37.9;75.8;113.7;151.6;189.5;227.4;265.3;303.2;341.1;378.9;416.8;454.7;492.6;530.5;568.4;606.3;644.2;682.1;720.0;720.0" keyTimes="0;0.30085;0.30492;0.309;0.31307;0.31715;0.32122;0.3253;0.32937;0.33345;0.33752;0.3416;0.34567;0.34975;0.35382;0.35789;0.36197;0.36604;0.37012;0.37419;1"/></rect></clipPath>
 </defs>
-
 <style>
-.mono{font-family:"Courier New",Courier,"Lucida Console",monospace}
-.cyber{font-family:"Courier New",Courier,"Lucida Console",monospace;font-weight:700;letter-spacing:6px}
-
-@keyframes role1{0%,22%{opacity:1;transform:translateY(0)}25%,97%{opacity:0;transform:translateY(-8px)}100%{opacity:1;transform:translateY(0)}}
-@keyframes role2{0%,23%{opacity:0;transform:translateY(8px)}26%,47%{opacity:1;transform:translateY(0)}50%,100%{opacity:0;transform:translateY(-8px)}}
-@keyframes role3{0%,48%{opacity:0;transform:translateY(8px)}51%,72%{opacity:1;transform:translateY(0)}75%,100%{opacity:0;transform:translateY(-8px)}}
-@keyframes role4{0%,73%{opacity:0;transform:translateY(8px)}76%,97%{opacity:1;transform:translateY(0)}100%{opacity:0;transform:translateY(-8px)}}
-.r1{animation:role1 12s infinite}.r2{animation:role2 12s infinite;opacity:0}
-.r3{animation:role3 12s infinite;opacity:0}.r4{animation:role4 12s infinite;opacity:0}
-@keyframes pip1{0%,24%{opacity:1}25%,97%{opacity:0}100%{opacity:1}}
-@keyframes pip2{0%,24%{opacity:0}26%,49%{opacity:1}50%,100%{opacity:0}}
-@keyframes pip3{0%,49%{opacity:0}51%,74%{opacity:1}75%,100%{opacity:0}}
-@keyframes pip4{0%,74%{opacity:0}76%,98%{opacity:1}100%{opacity:0}}
-.p1{animation:pip1 12s infinite}.p2{animation:pip2 12s infinite;opacity:0}
-.p3{animation:pip3 12s infinite;opacity:0}.p4{animation:pip4 12s infinite;opacity:0}
-
-/* Cursor blink on name */
-@keyframes cursorBlink{0%,100%{opacity:1}50%{opacity:0}}
-
-/* Blood glow pulse */
-@keyframes bloodGlow{0%,100%{opacity:0.6}50%{opacity:1}}
-
-/* Scan line on name */
-@keyframes scanLine{
-  0%{transform:translateY(-5px);opacity:0}
-  10%{opacity:0.3}
-  90%{opacity:0.3}
-  100%{transform:translateY(55px);opacity:0}
-}
-/* Flicker for name */
-@keyframes nameFlicker{
-  0%,100%{opacity:1}
-  93%{opacity:1}
-  94%{opacity:0.7}
-  95%{opacity:1}
-  98%{opacity:0.85}
-  99%{opacity:1}
-}
+.mono{font-family:"Courier New",Courier,"Liberation Mono",monospace}
+.show{animation:show 15.5s infinite;opacity:0}@keyframes show{0%,28.387%{opacity:0}29.677%,95.484%{opacity:1}98.710%,100%{opacity:0}}
+.late{animation:late 15.5s infinite;opacity:0}@keyframes late{0%,36.774%{opacity:0}40.000%,95.484%{opacity:1}98.710%,100%{opacity:0}}
+.foot{animation:foot 15.5s infinite}@keyframes foot{0%{opacity:0}1.290%,95.484%{opacity:1}98.710%,100%{opacity:0}}
+.r1{animation:r1 15.5s infinite;opacity:0}@keyframes r1{0%,38.065%{opacity:0;transform:translateY(8px)}40.000%,50.323%{opacity:1;transform:translateY(0)}52.258%,100%{opacity:0;transform:translateY(-8px)}}
+.p1{animation:p1 15.5s infinite;opacity:0}@keyframes p1{0%,38.065%{opacity:0}40.000%,50.323%{opacity:1}52.258%,100%{opacity:0}}
+.r2{animation:r2 15.5s infinite;opacity:0}@keyframes r2{0%,52.258%{opacity:0;transform:translateY(8px)}54.194%,64.516%{opacity:1;transform:translateY(0)}66.452%,100%{opacity:0;transform:translateY(-8px)}}
+.p2{animation:p2 15.5s infinite;opacity:0}@keyframes p2{0%,52.258%{opacity:0}54.194%,64.516%{opacity:1}66.452%,100%{opacity:0}}
+.r3{animation:r3 15.5s infinite;opacity:0}@keyframes r3{0%,66.452%{opacity:0;transform:translateY(8px)}68.387%,78.710%{opacity:1;transform:translateY(0)}80.645%,100%{opacity:0;transform:translateY(-8px)}}
+.p3{animation:p3 15.5s infinite;opacity:0}@keyframes p3{0%,66.452%{opacity:0}68.387%,78.710%{opacity:1}80.645%,100%{opacity:0}}
+.r4{animation:r4 15.5s infinite;opacity:0}@keyframes r4{0%,80.645%{opacity:0;transform:translateY(8px)}82.581%,92.903%{opacity:1;transform:translateY(0)}94.839%,100%{opacity:0;transform:translateY(-8px)}}
+.p4{animation:p4 15.5s infinite;opacity:0}@keyframes p4{0%,80.645%{opacity:0}82.581%,92.903%{opacity:1}94.839%,100%{opacity:0}}
+.L{animation:L 15.5s infinite;opacity:0}@keyframes L{0%{opacity:0}1.935%,27.097%{opacity:1}29.032%,100%{opacity:0}}
+.blink{animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}
 </style>
-
 <g clip-path="url(#card)">
-  <rect width="1280" height="440" fill="url(#bg)"/>
-  <rect width="1280" height="440" fill="url(#dots)"/>
-  <circle cx="260" cy="150" r="260" fill="url(#glow)">
-    <animate attributeName="cx" values="260;420;260" dur="14s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="1100" cy="380" r="240" fill="url(#glow)" opacity=".7">
-    <animate attributeName="cy" values="380;300;380" dur="12s" repeatCount="indefinite"/>
-  </circle>
-
-  <!-- code mark -->
-  <g fill="none" stroke="#5b8cff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"
-     transform="translate(768 347) scale(.36)" opacity=".12">
-    <path d="M70 20L10 80L70 140"/><path d="M170 20L230 80L170 140"/><path d="M135 0L105 160" stroke="#a97cff"/>
-    <animate attributeName="opacity" values=".09;.16;.09" dur="6s" repeatCount="indefinite"/>
-  </g>
-
-  <!-- radar -->
-  <circle cx="1110" cy="250" r="150" fill="url(#radarglow)"/>
-  <g transform="translate(1110 250) scale(1.4)" opacity=".5">
-    <circle r="78" fill="#0b0f17" fill-opacity=".35" stroke="#33405f" stroke-width="1.2"/>
-    <circle r="62" fill="none" stroke="#26304a" stroke-width=".7" stroke-dasharray="1.5 3"/>
-    <circle r="46" fill="none" stroke="#2c3550" stroke-width=".8"/>
-    <circle r="30" fill="none" stroke="#26304a" stroke-width=".7" stroke-dasharray="1.5 3"/>
-    <circle r="14" fill="none" stroke="#2c3550" stroke-width=".8"/>
-    <path d="M-78 0H78M0 -78V78" stroke="#2c3550" stroke-width=".8"/>
-    <g>
-      <path d="M0 0L77.93 -3.27A78 78 0 0 1 78.00 0.00Z" fill="#3fb9a8" fill-opacity="0.200"/>
-      <path d="M0 0L71.26 -31.73A78 78 0 0 1 72.52 -28.71Z" fill="#3fb9a8" fill-opacity="0.060"/>
-      <line x1="0" y1="0" x2="78" y2="0" stroke="#3fb9a8" stroke-width="1.3" stroke-opacity=".95"/>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="7s" repeatCount="indefinite"/>
-    </g>
-    <circle r="2" fill="#3fb9a8" opacity=".9"/>
-    <circle r="5" fill="none" stroke="#3fb9a8" stroke-width=".6" opacity=".5">
-      <animate attributeName="r" values="3;12;3" dur="3.5s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values=".6;0;.6" dur="3.5s" repeatCount="indefinite"/>
-    </circle>
-  </g>
-
-  <!-- badge -->
-  <g transform="translate(872 34)">
-    <rect width="372" height="38" rx="19" fill="#0b0f17" fill-opacity=".8" stroke="#5b8cff" stroke-opacity=".7"/>
-    <circle cx="22" cy="19" r="5" fill="#3fb9a8">
-      <animate attributeName="opacity" values="1;.3;1" dur="2s" repeatCount="indefinite"/>
-    </circle>
-    <path transform="translate(336 9)" d="M10 0L19 3V10C19 15 15 19 10 21C5 19 1 15 1 10V3Z"
-          fill="none" stroke="#8ec5ff" stroke-width="1.8" stroke-linejoin="round"/>
-    <text x="38" y="24.5" font-family="'JetBrains Mono',Consolas,monospace"
-          font-size="13.5" font-weight="700" fill="#8ec5ff" letter-spacing="1.2">TEAM FOXBAT  â€¢  CYBERSECURITY &amp; RECON</text>
-  </g>
-
-  <!-- greeting prompt -->
-  <g font-family="'Courier New',Courier,monospace">
-    <text x="76" y="118" font-size="22" font-weight="700" fill="#3fb9a8" letter-spacing="4">&gt; HI THERE, I AM<tspan fill="#8ec5ff">
-      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/> _</tspan>
-    </text>
-  </g>
-
-  <!-- POWER LOADING HUD
-       POWER LOADING HUD
-       Layout: circular gauge (left) + progress bar (right)
-       Positioned: x=72, y=130, total w=870, h=140
-       -->
-
-  <!-- â”€â”€ Circular gauge â”€â”€ center at (192, 198) r=68 â”€â”€ -->
-  <!-- Outer decorative rings -->
-  <circle cx="192" cy="198" r="78" fill="none" stroke="#00e5cc" stroke-width="1" stroke-opacity="0.3"
-          stroke-dasharray="4 4"/>
-  <circle cx="192" cy="198" r="82" fill="none" stroke="#00e5cc" stroke-width="0.6" stroke-opacity="0.18"/>
-
-  <!-- Gauge tick marks (24 ticks around 270Â° arc) -->
-  <g transform="translate(192,198)">
-    <line x1="66" y1="0" x2="72" y2="0" stroke="#00e5cc" stroke-width="2" stroke-opacity="0.5" transform="rotate(-135)"/>
-    <line x1="66" y1="0" x2="72" y2="0" stroke="#00e5cc" stroke-width="1" stroke-opacity="0.3" transform="rotate(-123.75)"/>
-    <line x1="66" y1="0" x2="72" y2="0" stroke="#00e5cc" stroke-width="1" stroke-opacity="0.3" transform="rotate(-112.5)"/>
-    <line x1="66" y1="0" x2="70" y2="0" stroke="#00e5cc" stroke-width="1.5" stroke-opacity="0.4" transform="rotate(-101.25)"/>
-    <line x1="66" y1="0" x2="72" y2="0" stroke="#00e5cc" stroke-width="1" stroke-opacity="0.3" transform="rotate(-90)"/>
-    <line x1="66" y1="0" x2="72" y2="0" stroke="#00e5cc" stroke-width="1" stroke-opacity="0.3" transform="rotate(-78.75)"/>
-    <line x1="66" y1="0" x2="72" y2="0" stroke="#00e5cc" stroke-width="1" stroke-opacity="0.3" transform="rotate(-67.5)"/>
-    <line x1="66" y1="0" x2="70" y2="0" stroke="#00e5cc" stroke-width="1.5" stroke-opacity="0.4" transform="rotate(-56.25)"/>
-    <line x1="66" y1="0" x2="72" y2="0" stroke="#00e5cc" stroke-width="1" stroke-opacity="0.3" transform="rotate(-45)"/>
-    <line x1="66" y1="0" x2="72" y2="0" stroke="#00e5cc" stroke-width="1" stroke-opacity="0.3" transform="rotate(-33.75)"/>
-    <line x1="66" y1="0" x2="72" y2="0" stroke="#00e5cc" stroke-width="1" stroke-opacity="0.3" transform="rotate(-22.5)"/>
-    <line x1="66" y1="0" x2="70" y2="0" stroke="#00e5cc" stroke-width="1.5" stroke-opacity="0.4" transform="rotate(-11.25)"/>
-    <line x1="66" y1="0" x2="72" y2="0" stroke="#00e5cc" stroke-width="2" stroke-opacity="0.5" transform="rotate(0)"/>
-    <line x1="66" y1="0" x2="72" y2="0" stroke="#00e5cc" stroke-width="1" stroke-opacity="0.3" transform="rotate(11.25)"/>
-    <line x1="66" y1="0" x2="72" y2="0" stroke="#00e5cc" stroke-width="1" stroke-opacity="0.3" transform="rotate(22.5)"/>
-    <line x1="66" y1="0" x2="70" y2="0" stroke="#00e5cc" stroke-width="1.5" stroke-opacity="0.4" transform="rotate(33.75)"/>
-    <line x1="66" y1="0" x2="72" y2="0" stroke="#00e5cc" stroke-width="1" stroke-opacity="0.3" transform="rotate(45)"/>
-    <line x1="66" y1="0" x2="72" y2="0" stroke="#00e5cc" stroke-width="1" stroke-opacity="0.3" transform="rotate(56.25)"/>
-    <line x1="66" y1="0" x2="72" y2="0" stroke="#00e5cc" stroke-width="1" stroke-opacity="0.3" transform="rotate(67.5)"/>
-    <line x1="66" y1="0" x2="70" y2="0" stroke="#00e5cc" stroke-width="1.5" stroke-opacity="0.4" transform="rotate(78.75)"/>
-    <line x1="66" y1="0" x2="72" y2="0" stroke="#00e5cc" stroke-width="2" stroke-opacity="0.5" transform="rotate(90)"/>
-    <line x1="66" y1="0" x2="72" y2="0" stroke="#00e5cc" stroke-width="1" stroke-opacity="0.3" transform="rotate(101.25)"/>
-    <line x1="66" y1="0" x2="72" y2="0" stroke="#00e5cc" stroke-width="1" stroke-opacity="0.3" transform="rotate(112.5)"/>
-    <line x1="66" y1="0" x2="72" y2="0" stroke="#00e5cc" stroke-width="2" stroke-opacity="0.5" transform="rotate(135)"/>
-  </g>
-
-  <!-- Track arc (270Â° from -135Â° to +135Â°, cx2Ï€ r=58) circumferenceâ‰ˆ364.4 -->
-  <!-- stroke-dasharray: 273.3 (270Â°) gap 91.1 (90Â°) = 364.4 total -->
-  <circle cx="192" cy="198" r="58"
-          fill="none" stroke="#003333" stroke-width="8"
-          stroke-dasharray="273.3 91.1"
-          stroke-dashoffset="-45.5"
-          transform="rotate(-135 192 198)"/>
-
-  <!-- Animated fill arc: 0â†’100â†’0% cycling -->
-  <!-- 100% = 273.3 dash, 0% = 0 dash -->
-  <circle cx="192" cy="198" r="58"
-          fill="none" stroke="#00e5cc" stroke-width="8"
-          stroke-linecap="round"
-          stroke-dasharray="273.3 91.1"
-          stroke-dashoffset="-45.5"
-          transform="rotate(-135 192 198)"
-          filter="url(#termGlow)">
-    <animate attributeName="stroke-dasharray"
-      values="0 364.4;82 282.4;164 200.4;219 145.4;246 118.4;264 100.4;273.3 91.1;264 100.4;246 118.4;219 145.4;164 200.4;82 282.4;0 364.4"
-      keyTimes="0;0.07;0.15;0.22;0.3;0.38;0.5;0.62;0.68;0.75;0.84;0.92;1"
-      dur="6s" repeatCount="indefinite" calcMode="spline"
-      keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1"/>
-  </circle>
-
-  <!-- Inner fill dark circle -->
-  <circle cx="192" cy="198" r="50" fill="#050a12"/>
-  <circle cx="192" cy="198" r="50" fill="none" stroke="#00e5cc" stroke-width="1" stroke-opacity="0.4"/>
-
-  <!-- Percentage number (slot-machine scroll via clipPath) -->
-  <clipPath id="pctWin"><rect x="148" y="174" width="88" height="46"/></clipPath>
-  <g clip-path="url(#pctWin)">
-    <text text-anchor="middle" font-family="'Courier New',monospace" font-weight="900"
-          font-size="38" fill="#00e5cc" filter="url(#termGlow)">
-      <tspan x="192" dy="0">
-        <animate attributeName="y" calcMode="discrete"
-          values="220;183;183;183;183;183;183;183;183;183;183;183;183;220"
-          keyTimes="0;0.04;0.14;0.24;0.34;0.44;0.5;0.56;0.64;0.72;0.80;0.88;0.96;1"
-          dur="6s" repeatCount="indefinite"/>
-      </tspan>0%
-    </text>
-    <!-- stacked % labels scroll past the clip window -->
-    <text x="192" text-anchor="middle" font-family="'Courier New',monospace"
-          font-weight="900" font-size="38" fill="#00e5cc" filter="url(#termGlow)">
-      <animate attributeName="y"
-        values="265;228;191;154;117;80;43;80;117;154;191;228;265"
-        keyTimes="0;0.07;0.15;0.22;0.30;0.38;0.50;0.62;0.68;0.75;0.84;0.92;1"
-        dur="6s" repeatCount="indefinite" calcMode="spline"
-        keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1"/>
-      30%
-    </text>
-    <text x="192" text-anchor="middle" font-family="'Courier New',monospace"
-          font-weight="900" font-size="38" fill="#00e5cc" filter="url(#termGlow)">
-      <animate attributeName="y"
-        values="302;265;228;191;154;117;80;117;154;191;228;265;302"
-        keyTimes="0;0.07;0.15;0.22;0.30;0.38;0.50;0.62;0.68;0.75;0.84;0.92;1"
-        dur="6s" repeatCount="indefinite" calcMode="spline"
-        keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1"/>
-      60%
-    </text>
-    <text x="192" text-anchor="middle" font-family="'Courier New',monospace"
-          font-weight="900" font-size="38" fill="#00e5cc" filter="url(#termGlow)">
-      <animate attributeName="y"
-        values="339;302;265;228;191;154;117;154;191;228;265;302;339"
-        keyTimes="0;0.07;0.15;0.22;0.30;0.38;0.50;0.62;0.68;0.75;0.84;0.92;1"
-        dur="6s" repeatCount="indefinite" calcMode="spline"
-        keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1"/>
-      80%
-    </text>
-    <text x="192" text-anchor="middle" font-family="'Courier New',monospace"
-          font-weight="900" font-size="38" fill="#00e5cc" filter="url(#termGlow)">
-      <animate attributeName="y"
-        values="376;339;302;265;228;191;154;191;228;265;302;339;376"
-        keyTimes="0;0.07;0.15;0.22;0.30;0.38;0.50;0.62;0.68;0.75;0.84;0.92;1"
-        dur="6s" repeatCount="indefinite" calcMode="spline"
-        keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1"/>
-      100%
-    </text>
-  </g>
-
-  <!-- â”€â”€ Progress bar section: x=295 to x=870, y=155â€“245 â”€â”€ -->
-  <!-- POWER LOADING label -->
-  <text x="295" y="168" font-family="'Courier New',monospace" font-weight="700"
-        font-size="13" fill="#00e5cc" letter-spacing="5" filter="url(#termGlow)">POWER LOADING...</text>
-
-  <!-- Bar outline frame -->
-  <rect x="295" y="178" width="560" height="36" rx="3"
-        fill="none" stroke="#00e5cc" stroke-width="1.5" stroke-opacity="0.5"/>
-  <!-- Corner accents -->
-  <rect x="293" y="176" width="10" height="4" fill="#00e5cc" opacity="0.8"/>
-  <rect x="843" y="176" width="10" height="4" fill="#00e5cc" opacity="0.8"/>
-  <rect x="293" y="210" width="10" height="4" fill="#00e5cc" opacity="0.8"/>
-  <rect x="843" y="210" width="10" height="4" fill="#00e5cc" opacity="0.8"/>
-
-  <!-- 20 progress bar segments, fill width animates 0â†’560â†’0 -->
-  <!-- Background segments (always visible, dimmed) -->
-  <g fill="#003333" opacity="0.6">
-    <rect x="299"  y="182" width="23" height="28" rx="1"/>
-    <rect x="326"  y="182" width="23" height="28" rx="1"/>
-    <rect x="353"  y="182" width="23" height="28" rx="1"/>
-    <rect x="380"  y="182" width="23" height="28" rx="1"/>
-    <rect x="407"  y="182" width="23" height="28" rx="1"/>
-    <rect x="434"  y="182" width="23" height="28" rx="1"/>
-    <rect x="461"  y="182" width="23" height="28" rx="1"/>
-    <rect x="488"  y="182" width="23" height="28" rx="1"/>
-    <rect x="515"  y="182" width="23" height="28" rx="1"/>
-    <rect x="542"  y="182" width="23" height="28" rx="1"/>
-    <rect x="569"  y="182" width="23" height="28" rx="1"/>
-    <rect x="596"  y="182" width="23" height="28" rx="1"/>
-    <rect x="623"  y="182" width="23" height="28" rx="1"/>
-    <rect x="650"  y="182" width="23" height="28" rx="1"/>
-    <rect x="677"  y="182" width="23" height="28" rx="1"/>
-    <rect x="704"  y="182" width="23" height="28" rx="1"/>
-    <rect x="731"  y="182" width="23" height="28" rx="1"/>
-    <rect x="758"  y="182" width="23" height="28" rx="1"/>
-    <rect x="785"  y="182" width="23" height="28" rx="1"/>
-    <rect x="812"  y="182" width="23" height="28" rx="1"/>
-  </g>
-
-  <!-- Filled progress: animated clip width 0â†’560â†’0 -->
-  <clipPath id="barClip">
-    <rect x="299" y="181" height="30" rx="1">
-      <animate attributeName="width"
-        values="0;81;189;270;351;432;540;432;351;270;189;81;0"
-        keyTimes="0;0.07;0.15;0.22;0.30;0.38;0.50;0.62;0.68;0.75;0.84;0.92;1"
-        dur="6s" repeatCount="indefinite" calcMode="spline"
-        keySplines="0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1;0.4 0 0.6 1"/>
-    </rect>
-  </clipPath>
-  <g clip-path="url(#barClip)" filter="url(#termGlow)">
-    <rect x="299"  y="182" width="23" height="28" rx="1" fill="#00e5cc"/>
-    <rect x="326"  y="182" width="23" height="28" rx="1" fill="#00e5cc"/>
-    <rect x="353"  y="182" width="23" height="28" rx="1" fill="#00e5cc"/>
-    <rect x="380"  y="182" width="23" height="28" rx="1" fill="#00e5cc"/>
-    <rect x="407"  y="182" width="23" height="28" rx="1" fill="#00e5cc"/>
-    <rect x="434"  y="182" width="23" height="28" rx="1" fill="#00e5cc"/>
-    <rect x="461"  y="182" width="23" height="28" rx="1" fill="#00e5cc"/>
-    <rect x="488"  y="182" width="23" height="28" rx="1" fill="#00e5cc"/>
-    <rect x="515"  y="182" width="23" height="28" rx="1" fill="#00e5cc"/>
-    <rect x="542"  y="182" width="23" height="28" rx="1" fill="#00e5cc"/>
-    <rect x="569"  y="182" width="23" height="28" rx="1" fill="#00e5cc"/>
-    <rect x="596"  y="182" width="23" height="28" rx="1" fill="#00e5cc"/>
-    <rect x="623"  y="182" width="23" height="28" rx="1" fill="#00e5cc"/>
-    <rect x="650"  y="182" width="23" height="28" rx="1" fill="#00e5cc"/>
-    <rect x="677"  y="182" width="23" height="28" rx="1" fill="#00e5cc"/>
-    <rect x="704"  y="182" width="23" height="28" rx="1" fill="#00e5cc"/>
-    <rect x="731"  y="182" width="23" height="28" rx="1" fill="#00e5cc"/>
-    <rect x="758"  y="182" width="23" height="28" rx="1" fill="#00e5cc"/>
-    <rect x="785"  y="182" width="23" height="28" rx="1" fill="#00e5cc"/>
-    <rect x="812"  y="182" width="23" height="28" rx="1" fill="#00e5cc"/>
-  </g>
-
-  <!-- Scan-line sweep across bar -->
-  <clipPath id="barScanClip"><rect x="295" y="178" width="562" height="38"/></clipPath>
-  <rect x="295" y="178" width="6" height="38" fill="#00ff88" opacity="0.4" clip-path="url(#barScanClip)">
-    <animate attributeName="x" values="295;857;295" dur="2.4s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;0.5;0" dur="2.4s" repeatCount="indefinite"/>
-  </rect>
-
-  <!-- HUD decorative side elements -->
-  <text x="295" y="233" font-family="'Courier New',monospace" font-size="11"
-        fill="#3fb9a8" opacity="0.7" letter-spacing="2">SYS::BOOT</text>
-  <text x="750" y="233" font-family="'Courier New',monospace" font-size="11"
-        fill="#3fb9a8" opacity="0.7" letter-spacing="2" text-anchor="end">0xROOT//ACTIVE</text>
-
-  <!-- Connecting line from circle to bar -->
-  <line x1="270" y1="198" x2="295" y2="198" stroke="#00e5cc" stroke-width="1.5" stroke-opacity="0.5"/>
-  <line x1="270" y1="196" x2="270" y2="200" stroke="#00e5cc" stroke-width="2" stroke-opacity="0.7"/>
-  <circle cx="282" cy="198" r="2" fill="#00e5cc" opacity="0.6">
-    <animate attributeName="opacity" values="0.3;1;0.3" dur="1.2s" repeatCount="indefinite"/>
-  </circle>
-
-  <!-- cycling roles -->
-  <g class="mono" font-size="22" font-weight="600" transform="translate(76 290)">
-    <g class="r1"><text fill="#ff4444">Security Researcher<tspan fill="#5b6478" dx="12">â€¢</tspan><tspan fill="#c9d1d9" dx="12">Penetration Testing &amp; Vulnerability Assessment</tspan></text></g>
-    <g class="r2"><text fill="#5b8cff">Python Specialist<tspan fill="#5b6478" dx="12">â€¢</tspan><tspan fill="#c9d1d9" dx="12">Exploit Scripting &amp; Tool Automation</tspan></text></g>
-    <g class="r3"><text fill="#3fb9a8">Threat Intelligence<tspan fill="#5b6478" dx="12">â€¢</tspan><tspan fill="#c9d1d9" dx="12">Network Recon &amp; Security Engineering</tspan></text></g>
-    <g class="r4"><text fill="#a97cff">Team FoxBat<tspan fill="#5b6478" dx="12">â€¢</tspan><tspan fill="#c9d1d9" dx="12">Core Systems &amp; Ethical Hacker Lead</tspan></text></g>
-  </g>
-
-  <!-- role dots -->
-  <g transform="translate(76 324)">
-    <g fill="#232a3d"><circle cx="5" cy="2" r="4"/><circle cx="25" cy="2" r="4"/><circle cx="45" cy="2" r="4"/><circle cx="65" cy="2" r="4"/></g>
-    <g class="p1"><circle cx="5"  cy="2" r="9" fill="#ff4444" opacity=".55" filter="url(#halo)"/><circle cx="5"  cy="2" r="4" fill="#ff4444"/></g>
-    <g class="p2"><circle cx="25" cy="2" r="9" fill="#5b8cff" opacity=".55" filter="url(#halo)"/><circle cx="25" cy="2" r="4" fill="#5b8cff"/></g>
-    <g class="p3"><circle cx="45" cy="2" r="9" fill="#3fb9a8" opacity=".55" filter="url(#halo)"/><circle cx="45" cy="2" r="4" fill="#3fb9a8"/></g>
-    <g class="p4"><circle cx="65" cy="2" r="9" fill="#a97cff" opacity=".55" filter="url(#halo)"/><circle cx="65" cy="2" r="4" fill="#a97cff"/></g>
-  </g>
-
-  <!-- tag chips -->
-  <g font-family="'Courier New',Courier,monospace" font-size="13" font-weight="700">
-    <g transform="translate(76 360)">
-      <rect width="150" height="32" rx="16" fill="none" stroke="#ff4444" stroke-opacity=".8"/>
-      <text x="75" y="21" text-anchor="middle" fill="#ff6666">0xRoot Exploit</text>
-    </g>
-    <g transform="translate(238 360)">
-      <rect width="178" height="32" rx="16" fill="none" stroke="#5b8cff" stroke-opacity=".7"/>
-      <text x="89" y="21" text-anchor="middle" fill="#8ec5ff">Python Automation</text>
-    </g>
-    <g transform="translate(428 360)">
-      <rect width="135" height="32" rx="16" fill="none" stroke="#a97cff" stroke-opacity=".7"/>
-      <text x="67" y="21" text-anchor="middle" fill="#c4adff">Network Recon</text>
-    </g>
-  </g>
-
+<rect width="1280" height="440" fill="url(#bg)"/><rect width="1280" height="440" fill="url(#dots)"/>
+<circle cx="260" cy="150" r="260" fill="url(#glow)"><animate attributeName="cx" values="260;420;260" dur="14s" repeatCount="indefinite"/></circle>
+<circle cx="1100" cy="380" r="240" fill="url(#glow)" opacity=".6"/>
+<g fill="none" stroke="#5b8cff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" transform="translate(950 110) scale(1.1)" opacity=".1">
+ <path d="M70 20L10 80L70 140"/><path d="M170 20L230 80L170 140"/><path d="M135 0L105 160" stroke="#a97cff"/></g>
+<!-- corner brackets -->
+<g fill="none" stroke="#00e5cc" stroke-width="2" stroke-opacity=".6">
+ <path d="M28 52V28H52"/><path d="M1228 28H1252V52"/><path d="M28 388V412H52"/><path d="M1252 388V412H1228"/></g>
+<!-- window dots + badge -->
+<g><circle cx="76" cy="46" r="5" fill="#ff5f56"/><circle cx="96" cy="46" r="5" fill="#ffbd2e"/><circle cx="116" cy="46" r="5" fill="#27c93f"/></g>
+<g transform="translate(852 28)"><rect width="352" height="36" rx="18" fill="#0b0f17" fill-opacity=".8" stroke="#5b8cff" stroke-opacity=".7"/>
+ <circle cx="20" cy="18" r="4.5" fill="#3fb9a8"><animate attributeName="opacity" values="1;.3;1" dur="2s" repeatCount="indefinite"/></circle>
+ <text x="36" y="23" class="mono" font-size="12.5" font-weight="700" fill="#8ec5ff" letter-spacing="1.2">TEAM FOXBAT &#8226; CYBERSECURITY &amp; RECON</text></g>
+<!-- loading scene -->
+<g class="L" opacity="0">
+ <g><circle cx="230" cy="225" r="92" fill="none" stroke="#00e5cc" stroke-opacity=".25" stroke-width="1.2" stroke-dasharray="3 7"/>
+  <animateTransform attributeName="transform" type="rotate" from="0 230 225" to="360 230 225" dur="30s" repeatCount="indefinite"/></g>
+ <circle cx="230" cy="225" r="70" fill="none" stroke="#1b2336" stroke-width="8"/>
+ <circle cx="230" cy="225" r="70" fill="none" stroke="url(#barG)" stroke-width="8" stroke-dasharray="0 100" pathLength="100" transform="rotate(-90 230 225)" filter="url(#gl)">
+  <animate attributeName="stroke-dasharray" calcMode="discrete" dur="15.5s" repeatCount="indefinite" values="0 100;5 100;10 100;15 100;20 100;25 100;30 100;35 100;40 100;45 100;50 100;55 100;60 100;65 100;70 100;75 100;80 100;85 100;90 100;95 100;100 100;100 100" keyTimes="0;0.03461;0.04941;0.06335;0.07611;0.08748;0.0974;0.10593;0.11328;0.11977;0.12581;0.13185;0.13834;0.14568;0.15421;0.16413;0.1755;0.18827;0.20221;0.21701;0.23226;1"/></circle>
+ <g clip-path="url(#pctWin)"><g class="mono" font-size="30" font-weight="700" fill="#00e5cc" text-anchor="middle" filter="url(#gl)">
+  <animateTransform attributeName="transform" calcMode="discrete" dur="15.5s" repeatCount="indefinite" values="0 0;0 -40;0 -80;0 -120;0 -160;0 -200;0 -240;0 -280;0 -320;0 -360;0 -400;0 -440;0 -480;0 -520;0 -560;0 -600;0 -640;0 -680;0 -720;0 -760;0 -800;0 -800" keyTimes="0;0.03461;0.04941;0.06335;0.07611;0.08748;0.0974;0.10593;0.11328;0.11977;0.12581;0.13185;0.13834;0.14568;0.15421;0.16413;0.1755;0.18827;0.20221;0.21701;0.23226;1" type="translate"/>
+  <text x="230" y="235">0%</text><text x="230" y="275">5%</text><text x="230" y="315">10%</text><text x="230" y="355">15%</text><text x="230" y="395">20%</text><text x="230" y="435">25%</text><text x="230" y="475">30%</text><text x="230" y="515">35%</text><text x="230" y="555">40%</text><text x="230" y="595">45%</text><text x="230" y="635">50%</text><text x="230" y="675">55%</text><text x="230" y="715">60%</text><text x="230" y="755">65%</text><text x="230" y="795">70%</text><text x="230" y="835">75%</text><text x="230" y="875">80%</text><text x="230" y="915">85%</text><text x="230" y="955">90%</text><text x="230" y="995">95%</text><text x="230" y="1035">100%</text></g></g>
+ <text x="400" y="186" class="mono" font-size="14" font-weight="700" fill="#00e5cc" letter-spacing="6" opacity="1">POWER LOADING...<animate attributeName="opacity" calcMode="discrete" dur="15.5s" repeatCount="indefinite" values="1;0;0" keyTimes="0;0.23871;1"/></text>
+ <text x="400" y="186" class="mono" font-size="14" font-weight="700" fill="#3fb950" letter-spacing="6" opacity="0">ACCESS GRANTED<animate attributeName="opacity" calcMode="discrete" dur="15.5s" repeatCount="indefinite" values="0;1;1" keyTimes="0;0.23871;1"/></text>
+ <rect x="396" y="200" width="812" height="40" rx="4" fill="none" stroke="#33405f" stroke-width="1.2"/>
+ <g fill="#16213a"><rect x="400.0" y="205" width="23" height="30" rx="1.5"/><rect x="426.8" y="205" width="23" height="30" rx="1.5"/><rect x="453.6" y="205" width="23" height="30" rx="1.5"/><rect x="480.4" y="205" width="23" height="30" rx="1.5"/><rect x="507.2" y="205" width="23" height="30" rx="1.5"/><rect x="534.0" y="205" width="23" height="30" rx="1.5"/><rect x="560.8" y="205" width="23" height="30" rx="1.5"/><rect x="587.6" y="205" width="23" height="30" rx="1.5"/><rect x="614.4" y="205" width="23" height="30" rx="1.5"/><rect x="641.2" y="205" width="23" height="30" rx="1.5"/><rect x="668.0" y="205" width="23" height="30" rx="1.5"/><rect x="694.8" y="205" width="23" height="30" rx="1.5"/><rect x="721.6" y="205" width="23" height="30" rx="1.5"/><rect x="748.4" y="205" width="23" height="30" rx="1.5"/><rect x="775.2" y="205" width="23" height="30" rx="1.5"/><rect x="802.0" y="205" width="23" height="30" rx="1.5"/><rect x="828.8" y="205" width="23" height="30" rx="1.5"/><rect x="855.6" y="205" width="23" height="30" rx="1.5"/><rect x="882.4" y="205" width="23" height="30" rx="1.5"/><rect x="909.2" y="205" width="23" height="30" rx="1.5"/><rect x="936.0" y="205" width="23" height="30" rx="1.5"/><rect x="962.8" y="205" width="23" height="30" rx="1.5"/><rect x="989.6" y="205" width="23" height="30" rx="1.5"/><rect x="1016.4" y="205" width="23" height="30" rx="1.5"/><rect x="1043.2" y="205" width="23" height="30" rx="1.5"/><rect x="1070.0" y="205" width="23" height="30" rx="1.5"/><rect x="1096.8" y="205" width="23" height="30" rx="1.5"/><rect x="1123.6" y="205" width="23" height="30" rx="1.5"/><rect x="1150.4" y="205" width="23" height="30" rx="1.5"/><rect x="1177.2" y="205" width="23" height="30" rx="1.5"/></g>
+ <g clip-path="url(#barFill)" filter="url(#gl)"><rect x="400.0" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="426.8" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="453.6" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="480.4" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="507.2" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="534.0" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="560.8" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="587.6" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="614.4" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="641.2" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="668.0" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="694.8" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="721.6" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="748.4" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="775.2" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="802.0" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="828.8" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="855.6" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="882.4" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="909.2" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="936.0" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="962.8" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="989.6" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="1016.4" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="1043.2" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="1070.0" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="1096.8" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="1123.6" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="1150.4" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/><rect x="1177.2" y="205" width="23" height="30" rx="1.5" fill="url(#barG)"/></g>
+ <g opacity="0"><text x="400" y="278" class="mono" font-size="14"><tspan fill="#00e5cc" font-weight="700">[ OK ]</tspan><tspan fill="#8b949e" dx="12">ARMING FIREWALL</tspan></text><animate attributeName="opacity" calcMode="discrete" dur="15.5s" repeatCount="indefinite" values="0;1;1" keyTimes="0;0.0974;1"/></g><g opacity="0"><text x="400" y="302" class="mono" font-size="14"><tspan fill="#00e5cc" font-weight="700">[ OK ]</tspan><tspan fill="#8b949e" dx="12">LOADING PYTHON RUNTIME</tspan></text><animate attributeName="opacity" calcMode="discrete" dur="15.5s" repeatCount="indefinite" values="0;1;1" keyTimes="0;0.14568;1"/></g><g opacity="0"><text x="400" y="326" class="mono" font-size="14"><tspan fill="#00e5cc" font-weight="700">[ OK ]</tspan><tspan fill="#8b949e" dx="12">ESTABLISHING SECURE LINK</tspan></text><animate attributeName="opacity" calcMode="discrete" dur="15.5s" repeatCount="indefinite" values="0;1;1" keyTimes="0;0.21701;1"/></g>
 </g>
-<rect x=".75" y=".75" width="1278.5" height="438.5" rx="25.5"
-      fill="none" stroke="url(#bd)" stroke-width="1.2"/>
+<!-- greeting + name -->
+<g class="show">
+ <text x="76" y="130" class="mono" font-size="20" font-weight="700" fill="#00e5cc" letter-spacing="4">&gt; HI THERE, I AM<tspan class="blink"> _</tspan></text>
+ <g clip-path="url(#typeClip)"><g filter="url(#gl)"><text x="76" y="212" class="mono" font-size="56" font-weight="700" fill="url(#nameG)" textLength="720" lengthAdjust="spacing">SYED SAEED AL SEFAT</text></g></g>
+</g>
+<!-- roles -->
+<g class="late">
+ <g class="mono" font-size="20" font-weight="600" transform="translate(76 266)">
+  <g class="r1"><text fill="#ff4444">Security Researcher<tspan fill="#5b6478" dx="12">&#8226;</tspan><tspan fill="#c9d1d9" dx="12">Penetration Testing &amp; Vulnerability Assessment</tspan></text></g>
+  <g class="r2"><text fill="#5b8cff">Python Specialist<tspan fill="#5b6478" dx="12">&#8226;</tspan><tspan fill="#c9d1d9" dx="12">Exploit Scripting &amp; Tool Automation</tspan></text></g>
+  <g class="r3"><text fill="#3fb9a8">Threat Intelligence<tspan fill="#5b6478" dx="12">&#8226;</tspan><tspan fill="#c9d1d9" dx="12">Network Recon &amp; Security Engineering</tspan></text></g>
+  <g class="r4"><text fill="#a97cff">Team FoxBat<tspan fill="#5b6478" dx="12">&#8226;</tspan><tspan fill="#c9d1d9" dx="12">Core Systems &amp; Ethical Hacker Lead</tspan></text></g></g>
+ <g transform="translate(76 296)"><g fill="#232a3d"><circle cx="5" cy="2" r="4"/><circle cx="25" cy="2" r="4"/><circle cx="45" cy="2" r="4"/><circle cx="65" cy="2" r="4"/></g>
+  <g class="p1"><circle cx="5" cy="2" r="9" fill="#ff4444" opacity=".55" filter="url(#halo)"/><circle cx="5" cy="2" r="4" fill="#ff4444"/></g><g class="p2"><circle cx="25" cy="2" r="9" fill="#5b8cff" opacity=".55" filter="url(#halo)"/><circle cx="25" cy="2" r="4" fill="#5b8cff"/></g><g class="p3"><circle cx="45" cy="2" r="9" fill="#3fb9a8" opacity=".55" filter="url(#halo)"/><circle cx="45" cy="2" r="4" fill="#3fb9a8"/></g><g class="p4"><circle cx="65" cy="2" r="9" fill="#a97cff" opacity=".55" filter="url(#halo)"/><circle cx="65" cy="2" r="4" fill="#a97cff"/></g></g>
+ <g class="mono" font-size="13" font-weight="700">
+  <g transform="translate(76 318)"><rect width="150" height="32" rx="16" fill="none" stroke="#ff4444" stroke-opacity=".8"/><text x="75" y="21" text-anchor="middle" fill="#ff6666">0xRoot Exploit</text></g>
+  <g transform="translate(238 318)"><rect width="178" height="32" rx="16" fill="none" stroke="#5b8cff" stroke-opacity=".7"/><text x="89" y="21" text-anchor="middle" fill="#8ec5ff">Python Automation</text></g>
+  <g transform="translate(428 318)"><rect width="135" height="32" rx="16" fill="none" stroke="#a97cff" stroke-opacity=".7"/><text x="67" y="21" text-anchor="middle" fill="#c4adff">Network Recon</text></g></g>
+</g>
+</g>
+<rect x=".75" y=".75" width="1278.5" height="438.5" rx="25.5" fill="none" stroke="url(#bd)" stroke-width="1.2"/>
 </svg>
