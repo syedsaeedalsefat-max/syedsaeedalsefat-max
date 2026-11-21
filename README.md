@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner-v7.svg?v=skull2" alt="Syed Saeed Al Sefat - GitHub Banner" width="100%"/>
+<img src="assets/banner-v7.svg?v=skull3" alt="Syed Saeed Al Sefat - GitHub Banner" width="100%"/>
 
 <br/><br/>
 <a href="https://github.com/syedsaeedalsefat-max" target="_blank" title="GitHub">
@@ -32,7 +32,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/curtroder-terminal.svg?v=2" width="100%" alt="Curtroder Futuristic Termux Theme"/>
+  <img src="assets/curtroder-terminal.svg?v=fix1" width="100%" alt="Curtroder Futuristic Termux Theme"/>
 </p>
 
 <p align="center">

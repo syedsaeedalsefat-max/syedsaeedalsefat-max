@@ -138,9 +138,9 @@
     <text x="175" y="231" class="font-hacker" font-size="23" font-weight="700" fill="#00ff66" textLength="198" lengthAdjust="spacing" filter="url(#hackerGlow)">Hello world!</text>
   </g>
 
-  <!-- Sentence 2: This is COMMANCE reporting ! (types, pauses, clears) -->
+  <!-- Sentence 2: This is COMANCHE reporting ! (types, pauses, clears) -->
   <g clip-path="url(#clipCom)">
-    <text x="175" y="231" class="font-hacker" font-size="23" font-weight="700" fill="#00ff88" textLength="462" lengthAdjust="spacing" filter="url(#hackerGlow)">This is COMMANCE reporting !</text>
+    <text x="175" y="231" class="font-hacker" font-size="23" font-weight="700" fill="#00ff88" textLength="462" lengthAdjust="spacing" filter="url(#hackerGlow)">This is COMANCHE reporting !</text>
   </g>
 
   <!-- Real-time Synchronized Cursor (Steps with keystrokes, blinks during human pauses) -->

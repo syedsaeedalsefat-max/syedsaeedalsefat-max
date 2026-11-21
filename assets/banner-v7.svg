@@ -228,9 +228,9 @@
            style="animation:drip1 3.5s 1.5s infinite"/>
 
   <!-- ═══════════════════════════════════════════════════════════
-       BLOODY LAUGHING SKULL — pivot at center (100,100)
+       BLOODY LAUGHING SKULL — moved to marked position, smaller
        ═══════════════════════════════════════════════════════════ -->
-  <g transform="translate(905, 78)">
+  <g transform="translate(470, 44) scale(0.62)">
     <!-- Red glow halo behind skull -->
     <ellipse cx="100" cy="96" rx="90" ry="88" fill="#330000" opacity="0.6"
              style="animation:bloodGlow 1.5s ease-in-out infinite"/>
