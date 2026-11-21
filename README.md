@@ -32,7 +32,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/curtroder-terminal.svg" width="100%" alt="Curtroder Futuristic Termux Theme"/>
+  <img src="assets/curtroder-terminal.svg?v=2" width="100%" alt="Curtroder Futuristic Termux Theme"/>
 </p>
 
 <p align="center">
