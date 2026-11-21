@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 290" width="1000" height="290" role="img">
+  <title>Atia Sanjida (Oishi) - GitHub Profile Banner</title>
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="50%" stop-color="#0e1424"/>
+      <stop offset="100%" stop-color="#140d24"/>
+    </linearGradient>
+
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff">
+        <animate attributeName="stop-color" values="#58a6ff;#bc8cff;#39d353;#58a6ff" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#bc8cff">
+        <animate attributeName="stop-color" values="#bc8cff;#39d353;#58a6ff;#bc8cff" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#39d353">
+        <animate attributeName="stop-color" values="#39d353;#58a6ff;#bc8cff;#39d353" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#79c0ff"/>
+      <stop offset="50%" stop-color="#d2a8ff"/>
+      <stop offset="100%" stop-color="#56d364"/>
+    </linearGradient>
+
+    <linearGradient id="laserGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#bc8cff" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#39d353" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Dot Pattern -->
+    <pattern id="dotGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#ffffff" opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes role1 {
+      0%, 22%   { opacity: 1; transform: translateY(0px); }
+      25%, 97%  { opacity: 0; transform: translateY(-8px); }
+      100%      { opacity: 1; transform: translateY(0px); }
+    }
+    @keyframes role2 {
+      0%, 23%   { opacity: 0; transform: translateY(8px); }
+      26%, 47%  { opacity: 1; transform: translateY(0px); }
+      50%, 100% { opacity: 0; transform: translateY(-8px); }
+    }
+    @keyframes role3 {
+      0%, 48%   { opacity: 0; transform: translateY(8px); }
+      51%, 72%  { opacity: 1; transform: translateY(0px); }
+      75%, 100% { opacity: 0; transform: translateY(-8px); }
+    }
+    @keyframes role4 {
+      0%, 73%   { opacity: 0; transform: translateY(8px); }
+      76%, 97%  { opacity: 1; transform: translateY(0px); }
+      100%      { opacity: 0; transform: translateY(-8px); }
+    }
+    .role-1 { animation: role1 12s infinite; }
+    .role-2 { animation: role2 12s infinite; }
+    .role-3 { animation: role3 12s infinite; }
+    .role-4 { animation: role4 12s infinite; }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1000" height="290" rx="18" fill="url(#bgGrad)"/>
+  <rect width="1000" height="290" rx="18" fill="url(#dotGrid)"/>
+
+  <!-- Ambient Glow Orbs -->
+  <circle cx="150" cy="80" r="100" fill="#58a6ff" opacity="0.12" filter="url(#softGlow)"/>
+  <circle cx="850" cy="200" r="110" fill="#bc8cff" opacity="0.12" filter="url(#softGlow)"/>
+
+  <!-- Card Border with dynamic gradient -->
+  <rect x="1" y="1" width="998" height="288" rx="17" fill="none" stroke="url(#borderGrad)" stroke-width="2"/>
+
+  <!-- Terminal Title Bar -->
+  <rect x="1" y="1" width="998" height="38" rx="17" fill="#161b22" fill-opacity="0.8"/>
+  <rect x="1" y="26" width="998" height="13" fill="#161b22" fill-opacity="0.8"/>
+  <line x1="1" y1="39" x2="999" y2="39" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Mac Window Dots -->
+  <circle cx="28" cy="20" r="6" fill="#ff5f56"/>
+  <circle cx="48" cy="20" r="6" fill="#ffbd2e"/>
+  <circle cx="68" cy="20" r="6" fill="#27c93f"/>
+
+  <!-- Terminal Path / Title -->
+  <text x="500" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#8b949e" text-anchor="middle">
+    atia@workspace: ~/portfolio (main)
+  </text>
+
+  <!-- Live Status Badge (Top Right) -->
+  <g transform="translate(685, 9)">
+    <rect width="290" height="22" rx="11" fill="#0d1117" stroke="#388bfd" stroke-width="1.2"/>
+    <circle cx="14" cy="11" r="4.5" fill="#58a6ff">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="26" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10.5" font-weight="700" fill="#79c0ff" letter-spacing="0.5">B.SC. ICE • SYSTEMS &amp; SECURITY 🛡️</text>
+  </g>
+
+  <!-- Main Content Area -->
+  <!-- Monogram / Cyber Avatar Box -->
+  <g transform="translate(48, 68)">
+    <rect width="112" height="112" rx="24" fill="#161b22" stroke="url(#borderGrad)" stroke-width="2"/>
+    <circle cx="56" cy="56" r="44" fill="#0d1117"/>
+    <!-- Terminal Code Icon inside -->
+    <path d="M42 46 L30 56 L42 66" fill="none" stroke="#58a6ff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M70 46 L82 56 L70 66" fill="none" stroke="#bc8cff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="58" y1="44" x2="54" y2="68" stroke="#39d353" stroke-width="3.2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Name & Intro -->
+  <g transform="translate(182, 92)">
+    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#79c0ff" letter-spacing="1">
+      &gt; HI THERE, I'M
+    </text>
+    <text x="0" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" fill="url(#textGrad)" letter-spacing="0.5">
+      Atia Sanjida (Oishi)
+    </text>
+    <text x="365" y="34" font-size="28">👋</text>
+  </g>
+
+  <!-- Dynamic Animated Roles (Cycling) -->
+  <g transform="translate(182, 162)">
+    <g class="role-1">
+      <text x="0" y="0" font-family="'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace" font-size="16.5" font-weight="600" fill="#e6edf3">
+        🛡️ <tspan fill="#58a6ff">Security Researcher</tspan> • <tspan fill="#c9d1d9">Cybersecurity &amp; Ethical Hacking</tspan>
+      </text>
+    </g>
+    <g class="role-2">
+      <text x="0" y="0" font-family="'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace" font-size="16.5" font-weight="600" fill="#e6edf3">
+        💻 <tspan fill="#39d353">Currently Learning</tspan> • <tspan fill="#c9d1d9">Systems Engineering &amp; Computer Networks</tspan>
+      </text>
+    </g>
+    <g class="role-3">
+      <text x="0" y="0" font-family="'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace" font-size="16.5" font-weight="600" fill="#e6edf3">
+        🤖 <tspan fill="#bc8cff">Exploring</tspan> • <tspan fill="#c9d1d9">Python &amp; AI / ML</tspan>
+      </text>
+    </g>
+    <g class="role-4">
+      <text x="0" y="0" font-family="'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace" font-size="16.5" font-weight="600" fill="#e6edf3">
+        🎓 <tspan fill="#f0883e">B.Sc.</tspan> • <tspan fill="#c9d1d9">Information &amp; Communication Engineering</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- Tagline Quote -->
+  <g transform="translate(48, 222)">
+    <rect width="904" height="42" rx="10" fill="#161b22" fill-opacity="0.75" stroke="#30363d" stroke-width="1"/>
+    <text x="24" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#8b949e">
+      🎓 <tspan fill="#c9d1d9" font-weight="500">"B.Sc. in Information &amp; Communication Engineering | exploring Systems, Security, and Agentic AI."</tspan>
+    </text>
+  </g>
+
+  <!-- Animated Bottom Scanning Laser Beam -->
+  <rect x="0" y="286" width="180" height="3" rx="1.5" fill="url(#laserGrad)">
+    <animate attributeName="x" values="0;820;0" dur="5s" repeatCount="indefinite"/>
+  </rect>
+</svg>

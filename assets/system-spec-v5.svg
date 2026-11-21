@@ -1,0 +1,342 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 418" width="1000" height="418" role="img" xmlns:c2pa="http://c2pa.org/manifest">
+  <title>Syed Saeed Al Sefat - System Specifications &amp; Threat Intel</title>
+  <defs>
+    <linearGradient id="sysBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811"/>
+      <stop offset="50%" stop-color="#080e1a"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#388bfd" stop-opacity="0.65"/>
+      <stop offset="50%" stop-color="#238636" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0.65"/>
+    </linearGradient>
+
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <filter id="titleGlow" x="-40%" y="-80%" width="180%" height="260%">
+      <feGaussianBlur stdDeviation="3.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.22"/>
+      <stop offset="50%" stop-color="#0077ff" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="shieldRim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0f7ff"/>
+      <stop offset="30%" stop-color="#00c7ff"/>
+      <stop offset="70%" stop-color="#0066cc"/>
+      <stop offset="100%" stop-color="#002b66"/>
+    </linearGradient>
+    <linearGradient id="leftFacet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0c2d58"/>
+      <stop offset="50%" stop-color="#061833"/>
+      <stop offset="100%" stop-color="#020b18"/>
+    </linearGradient>
+    <linearGradient id="rightFacet" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05152b"/>
+      <stop offset="60%" stop-color="#020914"/>
+      <stop offset="100%" stop-color="#01040a"/>
+    </linearGradient>
+    <linearGradient id="lock3DBase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00c7ff"/>
+      <stop offset="40%" stop-color="#0077dd"/>
+      <stop offset="85%" stop-color="#0044aa"/>
+      <stop offset="100%" stop-color="#002266"/>
+    </linearGradient>
+    <linearGradient id="lockGloss" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.0"/>
+    </linearGradient>
+    <linearGradient id="shackleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00c7ff"/>
+      <stop offset="40%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#70d6ff"/>
+      <stop offset="100%" stop-color="#0077dd"/>
+    </linearGradient>
+
+    <!-- Title + label gradients -->
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#8ec5ff"/>
+    </linearGradient>
+    <linearGradient id="titleBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3fb9a8"/>
+      <stop offset=".55" stop-color="#5b8cff"/>
+      <stop offset="1" stop-color="#a97cff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="lblGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7ee7da"/>
+      <stop offset="1" stop-color="#7db4ff"/>
+    </linearGradient>
+    <linearGradient id="okShimmer" x1="0" y1="0" x2="1" y2="0" spreadMethod="reflect">
+      <stop offset="0" stop-color="#3fb950"/>
+      <stop offset=".5" stop-color="#8ef0b4"/>
+      <stop offset="1" stop-color="#3fb950"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="-0.5 0" to="0.5 0" dur="5s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="hlGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#5b8cff" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#5b8cff" stop-opacity="0"/>
+    </linearGradient>
+
+    <pattern id="sysGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#58a6ff" stroke-width="0.7" stroke-opacity="0.03"/>
+    </pattern>
+
+    <!-- typing reveal for the command line -->
+    <clipPath id="typeClip">
+      <rect x="0" y="0" height="30" width="0">
+        <animate attributeName="width" values="0;0;400;400" keyTimes="0;0.014;0.07;1" dur="14s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <!-- Window Container -->
+  <rect width="1000" height="418" rx="16" fill="url(#sysBg)"/>
+  <rect width="1000" height="418" rx="16" fill="url(#sysGrid)"/>
+  <rect x="1" y="1" width="998" height="416" rx="15" fill="none" stroke="url(#borderGrad)" stroke-width="1.2"/>
+
+  <!-- Top Bar -->
+  <rect x="1" y="1" width="998" height="38" rx="15" fill="#0d1117" fill-opacity="0.95"/>
+  <rect x="1" y="20" width="998" height="19" fill="#0d1117" fill-opacity="0.95"/>
+  <line x1="1" y1="39" x2="999" y2="39" stroke="#21262d" stroke-width="1"/>
+
+  <circle cx="24" cy="19" r="5" fill="#ff5f56"/>
+  <circle cx="42" cy="19" r="5" fill="#ffbd2e"/>
+  <circle cx="60" cy="19" r="5" fill="#27c93f"/>
+
+  <text x="500" y="24" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" font-weight="600" fill="#8b949e" text-anchor="middle">syed@foxbat_sec: ~ (fastfetch --profile overview)</text>
+
+  <circle cx="910" cy="19" r="4" fill="#3fb950">
+    <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="922" y="23" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="600" fill="#3fb950">ONLINE</text>
+
+  <!-- ================= ABOUT TITLE (inside the window) ================= -->
+  <g>
+    <text x="24" y="70" font-family="'JetBrains Mono', Consolas, Menlo, monospace" font-size="22" font-weight="800" fill="#3fb9a8" filter="url(#titleGlow)">~ .
+      <animate attributeName="opacity" values="1;.45;1" dur="2.6s" repeatCount="indefinite"/>
+    </text>
+    <g transform="translate(48 52)" fill="none" stroke="#7ee7da" stroke-width="1.9" stroke-linecap="round" filter="url(#softGlow)">
+      <circle cx="9" cy="5.5" r="4.4"/>
+      <path d="M1 20 C1 12.5 17 12.5 17 20"/>
+    </g>
+    <text x="78" y="70" font-family="'Orbitron','Audiowide','Share Tech Mono','JetBrains Mono',Consolas,Menlo,monospace" font-size="21" font-weight="900" fill="url(#titleGrad)" textLength="88" lengthAdjust="spacingAndGlyphs">ABOUT /</text>
+    <text x="182" y="69" font-family="'JetBrains Mono', Consolas, Menlo, monospace" font-size="12" fill="#465065">// who i am</text>
+    <text x="976" y="69" text-anchor="end" font-family="'JetBrains Mono', Consolas, Menlo, monospace" font-size="11" fill="#364055">~/profile/about.md</text>
+
+    <!-- underline with a light sweeping through it -->
+    <rect x="24" y="80" width="142" height="2" rx="1" fill="url(#titleBar)"/>
+    <rect x="24" y="80" width="26" height="2" rx="1" fill="#ffffff" opacity=".9">
+      <animate attributeName="x" values="24;140;24" dur="3.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values=".15;.95;.15" dur="3.4s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- ================= LEFT COLUMN: HUD AVATAR ================= -->
+  <g transform="translate(24, 100)">
+    <rect width="268" height="298" rx="14" fill="#070c16" fill-opacity="0.85" stroke="#1b2434" stroke-width="1.2"/>
+
+    <g transform="translate(134, 106)">
+      <circle cx="0" cy="0" r="104" fill="url(#coreGlow)"/>
+
+      <!-- radar ping -->
+      <circle cx="0" cy="0" r="46" fill="none" stroke="#00f0ff" stroke-width="1" opacity="0">
+        <animate attributeName="r" values="46;98" dur="3.6s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values=".45;0" dur="3.6s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="0" cy="0" r="98" fill="none" stroke="#214470" stroke-width="1.2" opacity="0.6"/>
+
+      <g stroke="#00f0ff" stroke-width="1.6" opacity="0.85">
+        <line x1="0" y1="-104" x2="0" y2="-88"/>
+        <line x1="0" y1="88" x2="0" y2="104"/>
+        <line x1="-104" y1="0" x2="-88" y2="0"/>
+        <line x1="88" y1="0" x2="104" y2="0"/>
+        <animate attributeName="opacity" values=".85;.35;.85" dur="3s" repeatCount="indefinite"/>
+      </g>
+
+      <g stroke="#388bfd" stroke-width="1" opacity="0.45">
+        <line x1="64" y1="64" x2="70" y2="70"/>
+        <line x1="-64" y1="64" x2="-70" y2="70"/>
+        <line x1="-64" y1="-64" x2="-70" y2="-70"/>
+        <line x1="64" y1="-64" x2="70" y2="-70"/>
+        <line x1="79.7" y1="46.0" x2="84.9" y2="49.0"/>
+        <line x1="46.0" y1="79.7" x2="49.0" y2="84.9"/>
+        <line x1="-46.0" y1="79.7" x2="-49.0" y2="84.9"/>
+        <line x1="-79.7" y1="46.0" x2="-84.9" y2="49.0"/>
+        <line x1="-79.7" y1="-46.0" x2="-84.9" y2="-49.0"/>
+        <line x1="-46.0" y1="-79.7" x2="-49.0" y2="-84.9"/>
+        <line x1="46.0" y1="-79.7" x2="49.0" y2="-84.9"/>
+        <line x1="79.7" y1="-46.0" x2="84.9" y2="-49.0"/>
+      </g>
+
+      <circle cx="0" cy="0" r="84" fill="none" stroke="#58a6ff" stroke-width="1.8" stroke-dasharray="6, 12, 10, 12" opacity="0.5">
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="30s" repeatCount="indefinite"/>
+      </circle>
+
+      <g>
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+        <path d="M 24 -66 A 70 70 0 0 1 66 24" fill="none" stroke="#00c7ff" stroke-width="3.2" stroke-linecap="round" filter="url(#softGlow)"/>
+        <path d="M -24 66 A 70 70 0 0 1 -66 -24" fill="none" stroke="#388bfd" stroke-width="3.2" stroke-linecap="round" filter="url(#softGlow)"/>
+        <circle cx="66" cy="24" r="2.5" fill="#e0f7ff"/>
+        <circle cx="-66" cy="-24" r="2.5" fill="#388bfd"/>
+      </g>
+
+      <circle cx="0" cy="0" r="56" fill="none" stroke="#58a6ff" stroke-width="0.9" stroke-dasharray="14, 6, 4, 6" opacity="0.4">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="18s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- 3D cyber shield -->
+      <g filter="url(#softGlow)">
+        <path d="M 0 -44 C 12 -47 28 -45 36 -35 C 41 -12 42 14 30 33 C 20 44 0 53 0 53 C 0 53 -20 44 -30 33 C -42 14 -41 -12 -36 -35 C -28 -45 -12 -47 0 -44 Z" fill="#030914" stroke="url(#shieldRim)" stroke-width="2.8" stroke-linejoin="round"/>
+        <path d="M 0 -43 C -10 -46 -26 -44 -34 -34 C -39 -12 -38 13 -28 31 C -19 41 0 50 0 50 Z" fill="url(#leftFacet)"/>
+        <path d="M 0 -43 C 10 -46 26 -44 34 -34 C 39 -12 38 13 28 31 C 19 41 0 50 0 50 Z" fill="url(#rightFacet)"/>
+        <line x1="0" y1="-43" x2="0" y2="51" stroke="#00c7ff" stroke-width="1" opacity="0.4"/>
+        <path d="M -33 -33 C -23 -43 -9 -45 0 -43 C 9 -45 23 -43 33 -33" fill="none" stroke="#ffffff" stroke-width="1.4" stroke-linecap="round" opacity="0.85"/>
+
+        <g transform="translate(0, 4)">
+          <path d="M -11 -3 L -11 -13 C -11 -21 11 -21 11 -13 L 11 -3" fill="none" stroke="#010610" stroke-width="6" stroke-linecap="round"/>
+          <path d="M -11 -3 L -11 -13 C -11 -21 11 -21 11 -13 L 11 -3" fill="none" stroke="url(#shackleGrad)" stroke-width="4" stroke-linecap="round"/>
+          <path d="M -6 -19 C -2 -21 2 -21 6 -19" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round"/>
+          <rect x="-19" y="-3" width="38" height="28" rx="5" fill="#010610" opacity="0.7"/>
+          <rect x="-18.5" y="-3.5" width="37" height="27" rx="4.5" fill="url(#lock3DBase)" stroke="#00c7ff" stroke-width="1.2"/>
+          <rect x="-17" y="-2.5" width="34" height="11" rx="3" fill="url(#lockGloss)"/>
+          <circle cx="0" cy="8" r="3.2" fill="#010915" stroke="#00c7ff" stroke-width="0.7"/>
+          <path d="M -1.8 8 L 1.8 8 L 2.4 15 L -2.4 15 Z" fill="#010915" stroke="#00c7ff" stroke-width="0.7"/>
+          <circle cx="0" cy="8" r="1.3" fill="#00f0ff">
+            <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+          </circle>
+          <line x1="0" y1="9.5" x2="0" y2="13.5" stroke="#00c7ff" stroke-width="1" stroke-linecap="round"/>
+        </g>
+      </g>
+    </g>
+
+    <text x="134" y="226" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14.5" font-weight="700" fill="#f0f6fc" text-anchor="middle" letter-spacing="0.6">SYED SAEED AL SEFAT</text>
+    <text x="134" y="244" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11" font-weight="500" fill="#79c0ff" text-anchor="middle" letter-spacing="0.4">SECURITY RESEARCHER // 0xRoot</text>
+
+    <g transform="translate(42, 258)">
+      <rect width="184" height="26" rx="13" fill="#041610" stroke="#238636" stroke-width="1.2">
+        <animate attributeName="stroke-opacity" values="1;.45;1" dur="2.4s" repeatCount="indefinite"/>
+      </rect>
+      <circle cx="22" cy="13" r="3.8" fill="#3fb950">
+        <animate attributeName="opacity" values="1;0.4;1" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <text x="34" y="17" font-family="'JetBrains Mono', monospace" font-size="10.5" font-weight="700" fill="#3fb950" letter-spacing="0.6">ACTIVE ON GITHUB</text>
+    </g>
+  </g>
+
+  <!-- ================= RIGHT COLUMN: SPECS ================= -->
+  <g transform="translate(315, 100)">
+    <!-- typed command -->
+    <text x="0" y="18" font-family="'JetBrains Mono', monospace" font-size="13.5" font-weight="500" clip-path="url(#typeClip)">
+      <tspan fill="#3fb950" font-weight="700">syed@foxbat_sec</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff" font-weight="700">~</tspan><tspan fill="#8b949e">$</tspan> <tspan fill="#f0f6fc" font-weight="600">fastfetch --profile overview</tspan>
+    </text>
+    <line x1="0" y1="30" x2="655" y2="30" stroke="#21262d" stroke-width="1"/>
+
+    <g transform="translate(0, 56)" font-family="'JetBrains Mono', monospace" font-size="11.5">
+
+      <!-- moving "selected row" highlight -->
+      <rect x="-10" y="-14" width="650" height="21" rx="5" fill="url(#hlGrad)" opacity="0">
+        <animate attributeName="y" calcMode="discrete" values="-14;-14;11;36;61;86;111;136;161" keyTimes="0;.27;.34;.41;.48;.55;.62;.69;.76" dur="14s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.26;.28;.84;.88;1" dur="14s" repeatCount="indefinite"/>
+      </rect>
+
+      <!-- Row 1 -->
+      <g>
+        <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.0714;.1;.914;1" dur="14s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="-14 0;-14 0;0 0;0 0;0 0" keyTimes="0;.0714;.1;.914;1" dur="14s" repeatCount="indefinite"/>
+        <text x="0" y="0" font-weight="700" fill="url(#lblGrad)">Affiliation</text>
+        <text x="106" y="0" fill="#566074">:</text>
+        <text x="128" y="0" font-weight="500" fill="#f0f6fc">Team <tspan fill="#cfe0f7">FoxBat</tspan> <tspan fill="#5eead4" font-weight="700">(Security &amp; Core Lead)</tspan></text>
+      </g>
+
+      <!-- Row 2 -->
+      <g>
+        <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.0929;.1214;.914;1" dur="14s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="-14 0;-14 0;0 0;0 0;0 0" keyTimes="0;.0929;.1214;.914;1" dur="14s" repeatCount="indefinite"/>
+        <text x="0" y="25" font-weight="700" fill="url(#lblGrad)">Workstation</text>
+        <text x="106" y="25" fill="#566074">:</text>
+        <text x="128" y="25" font-weight="500" fill="#c9d1d9">Hardened Kernel <tspan fill="#566074">(x86_64,</tspan> <tspan fill="#7ee7da">Kali Linux</tspan> <tspan fill="#566074">&amp;</tspan> <tspan fill="#ff9a5c">Arch Linux</tspan><tspan fill="#566074">,</tspan> <tspan fill="#7db4ff">Debian</tspan><tspan fill="#566074">)</tspan></text>
+      </g>
+
+      <!-- Row 3 -->
+      <g>
+        <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.1143;.1429;.914;1" dur="14s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="-14 0;-14 0;0 0;0 0;0 0" keyTimes="0;.1143;.1429;.914;1" dur="14s" repeatCount="indefinite"/>
+        <text x="0" y="50" font-weight="700" fill="url(#lblGrad)">Core Track</text>
+        <text x="106" y="50" fill="#566074">:</text>
+        <text x="128" y="50" font-weight="700" fill="#8ec5ff">Offensive Security <tspan fill="#566074">&amp;</tspan> <tspan fill="#c4adff">Python Exploit Development</tspan></text>
+      </g>
+
+      <!-- Row 4 -->
+      <g>
+        <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.1357;.1643;.914;1" dur="14s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="-14 0;-14 0;0 0;0 0;0 0" keyTimes="0;.1357;.1643;.914;1" dur="14s" repeatCount="indefinite"/>
+        <text x="0" y="75" font-weight="700" fill="url(#lblGrad)">Security Lab</text>
+        <text x="106" y="75" fill="#566074">:</text>
+        <text x="128" y="75" font-weight="500" fill="#d6deea">Vulnerability Assessment<tspan fill="#566074">,</tspan> Network Recon <tspan fill="#566074">&amp;</tspan> Penetration Testing</text>
+      </g>
+
+      <!-- Row 5 -->
+      <g>
+        <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.1571;.1857;.914;1" dur="14s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="-14 0;-14 0;0 0;0 0;0 0" keyTimes="0;.1571;.1857;.914;1" dur="14s" repeatCount="indefinite"/>
+        <text x="0" y="100" font-weight="700" fill="url(#lblGrad)">Tool Arsenal</text>
+        <text x="106" y="100" fill="#566074">:</text>
+        <text x="128" y="100" font-weight="500" fill="#d6deea">Burp Suite<tspan fill="#566074">,</tspan> Metasploit<tspan fill="#566074">,</tspan> Nmap <tspan fill="#566074">&amp;</tspan> Wireshark <tspan fill="#ff9a5c" font-weight="700">(0xRoot)</tspan></text>
+      </g>
+
+      <!-- Row 6 -->
+      <g>
+        <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.1786;.2071;.914;1" dur="14s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="-14 0;-14 0;0 0;0 0;0 0" keyTimes="0;.1786;.2071;.914;1" dur="14s" repeatCount="indefinite"/>
+        <text x="0" y="125" font-weight="700" fill="url(#lblGrad)">Languages</text>
+        <text x="106" y="125" fill="#566074">:</text>
+        <text x="128" y="125" font-weight="500" fill="#d6deea">Python 3 <tspan fill="#566074">|</tspan> <tspan fill="#7db4ff">C &amp; C++</tspan> <tspan fill="#566074">|</tspan> <tspan fill="#ff9a5c">Bash Shell</tspan> <tspan fill="#566074">|</tspan> <tspan fill="#7ee7da">SQL</tspan> <tspan fill="#566074">|</tspan> <tspan fill="#c4adff">Docker</tspan></text>
+      </g>
+
+      <!-- Row 7 -->
+      <g>
+        <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.2;.2286;.914;1" dur="14s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="-14 0;-14 0;0 0;0 0;0 0" keyTimes="0;.2;.2286;.914;1" dur="14s" repeatCount="indefinite"/>
+        <text x="0" y="150" font-weight="700" fill="url(#lblGrad)">Methodology</text>
+        <text x="106" y="150" fill="#566074">:</text>
+        <text x="128" y="150" font-weight="500" fill="#d6deea">First Principles <tspan fill="#566074">—</tspan> <tspan fill="#9fb4d3" font-style="italic">"Dissecting systems from memory layout to logic"</tspan></text>
+      </g>
+
+      <!-- Row 8 -->
+      <g>
+        <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;.2214;.25;.914;1" dur="14s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="-14 0;-14 0;0 0;0 0;0 0" keyTimes="0;.2214;.25;.914;1" dur="14s" repeatCount="indefinite"/>
+        <text x="0" y="175" font-weight="700" fill="url(#lblGrad)">Profile Mode</text>
+        <text x="106" y="175" fill="#566074">:</text>
+        <text x="128" y="175" font-weight="700" fill="url(#okShimmer)">Ethical Hacker &amp; Advanced Python Engineer</text>
+      </g>
+    </g>
+
+    <!-- palette blocks: rolling wave pulse -->
+    <g transform="translate(0, 268)">
+      <rect x="0" y="0" width="18" height="9" rx="2" fill="#21262d"/>
+      <rect x="24" y="0" width="18" height="9" rx="2" fill="#30363d"/>
+      <rect x="48" y="0" width="18" height="9" rx="2" fill="#388bfd"><animate attributeName="opacity" values=".45;1;.45" dur="3s" begin="0s" repeatCount="indefinite"/></rect>
+      <rect x="72" y="0" width="18" height="9" rx="2" fill="#58a6ff"><animate attributeName="opacity" values=".45;1;.45" dur="3s" begin=".2s" repeatCount="indefinite"/></rect>
+      <rect x="96" y="0" width="18" height="9" rx="2" fill="#79c0ff"><animate attributeName="opacity" values=".45;1;.45" dur="3s" begin=".4s" repeatCount="indefinite"/></rect>
+      <rect x="120" y="0" width="18" height="9" rx="2" fill="#238636"><animate attributeName="opacity" values=".45;1;.45" dur="3s" begin=".6s" repeatCount="indefinite"/></rect>
+      <rect x="144" y="0" width="18" height="9" rx="2" fill="#3fb950"><animate attributeName="opacity" values=".45;1;.45" dur="3s" begin=".8s" repeatCount="indefinite"/></rect>
+      <rect x="168" y="0" width="18" height="9" rx="2" fill="#e6edf3"><animate attributeName="opacity" values=".45;1;.45" dur="3s" begin="1s" repeatCount="indefinite"/></rect>
+
+      <rect x="200" y="-3" width="7" height="15" fill="#3fb950" rx="1">
+        <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+  </g>
+<metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTplN2EyY2JkNS1jMDYzLTQxZDQtYjc5Ni1iNDkyNzAyZDM4NzcAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaFFAOb9rBIBK5J2JD3FizqQAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDpmNDkyZDYyZC0yOWE3LTQ2ZjItOTk4Zi0wNGYwMWRlZTVjMDRscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoRtaXraJJcpiyKcwPRIyRTgAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggIfKkQfxmXA3mM8YnfmEegpgwcqed+UOsJOb73oz+Ol2kZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaJ6yq5Z/0h+rEb7uB89nHUMAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRMAAAAAAAAAAAAAAAAZGhhc2hYIGnKnCM++ub4QjHTuTjc5TEPqZJHMm4HnusK4hWLtp92ZG5hbWVuanVtYmYgbWFuaWZlc3RqZXhjbHVzaW9uc4GiZXN0YXJ0GVVkZmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmU3YTJjYmQ1LWMwNjMtNDFkNC1iNzk2LWI0OTI3MDJkMzg3Ny9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjM1ODU3OGE3LWQ3MGItNGM2My1iODk5LWJlNDA5OTg0Y2U1M3JjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCAh8qRB/GZcDeYzxid+YR6CmDByp535Q6wk5vvejP46XaJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggUoFjXaj/16DPH8Dc4nY6Mnnj3IIP+funYk+UsW1LES+iY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggVa9riWEyRpE8CSczpz2pnrx+fnrFeAuKu1kvuAOG8OB0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQAzGd3W3JiSdJvw1TH23Wv90c4TmPin9Xe4r++Zff6dwWmJ1/sUoW31EDRSGQrIYpOoEUla1ejEgBrPlIFwm4RU=</c2pa:manifest></metadata></svg>

@@ -1,0 +1,220 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 170" width="1000" height="170" role="img">
+  <title>Syed Saeed Al Sefat - Terminal Session</title>
+  <defs>
+    <!-- Dark Cyber Window Background -->
+    <linearGradient id="termBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050813"/>
+      <stop offset="50%" stop-color="#070d1e"/>
+      <stop offset="100%" stop-color="#0b0818"/>
+    </linearGradient>
+
+    <!-- Neon Cyan to Purple/Magenta Outer Glow Gradient -->
+    <linearGradient id="termBorderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="35%" stop-color="#2979ff"/>
+      <stop offset="70%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#d946ef"/>
+    </linearGradient>
+
+    <!-- Progress Bar Gradient (Mint -> Cyan -> Blue -> Purple) -->
+    <linearGradient id="barGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ffc4"/>
+      <stop offset="30%" stop-color="#00f0ff"/>
+      <stop offset="65%" stop-color="#388bfd"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+
+    <!-- Glowing Filters -->
+    <filter id="borderGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="barGlow" x="-40%" y="-60%" width="180%" height="220%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Tactical Grid Lines Pattern -->
+    <pattern id="termGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#58a6ff" stroke-width="0.7" stroke-opacity="0.035"/>
+    </pattern>
+
+    <!-- Cyber Binary Pattern -->
+    <pattern id="termBinary" width="340" height="96" patternUnits="userSpaceOnUse">
+      <text x="10" y="20" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10" fill="#39d353" fill-opacity="0.05" letter-spacing="3">01001001 01000011 01000101 00100000</text>
+      <text x="45" y="44" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10" fill="#58a6ff" fill-opacity="0.04" letter-spacing="3">01010011 01000101 01000011 01010101</text>
+      <text x="15" y="68" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="10" fill="#39d353" fill-opacity="0.04" letter-spacing="3">01010011 01011001 01010011 01010100</text>
+    </pattern>
+  </defs>
+
+  <style>
+    .t-line {
+      animation: fadeInLine 0.4s cubic-bezier(0.4, 0, 0.2, 1) both;
+    }
+    .t-l1 { animation-delay: 0.1s; }
+    .t-l2 { animation-delay: 0.3s; }
+    .t-l3 { animation-delay: 0.5s; }
+    .t-l4 { animation-delay: 0.7s; }
+
+    @keyframes fadeInLine {
+      0%   { opacity: 0; transform: translateY(3px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
+  <!-- Terminal Window Background -->
+  <rect width="1000" height="170" rx="16" fill="url(#termBg)"/>
+  <rect width="1000" height="170" rx="16" fill="url(#termGrid)"/>
+  <rect width="1000" height="170" rx="16" fill="url(#termBinary)"/>
+  
+  <!-- Outer Neon Border with Cyan-Purple Gradient -->
+  <rect x="1" y="1" width="998" height="168" rx="15" fill="none" stroke="url(#termBorderGrad)" stroke-width="1.6" filter="url(#borderGlow)"/>
+
+  <!-- Top Bar Divider -->
+  <line x1="1" y1="38" x2="999" y2="38" stroke="#1f293d" stroke-width="1" stroke-opacity="0.75"/>
+
+  <!-- Window Controls (Red, Yellow, Green macOS Dots) -->
+  <circle cx="32" cy="20" r="5.5" fill="#ff5f56"/>
+  <circle cx="50" cy="20" r="5.5" fill="#ffbd2e"/>
+  <circle cx="68" cy="20" r="5.5" fill="#27c93f"/>
+
+  <!-- Top Right Status: Active on GitHub -->
+  <circle cx="862" cy="20" r="4.5" fill="#00ff66">
+    <animate attributeName="opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <text x="874" y="24" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="700" fill="#00ff66" letter-spacing="0.5">
+    Active on GitHub
+  </text>
+
+  <!-- Terminal Content Lines -->
+  <!-- Left Gutter Icons -->
+  <g font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" fill="#58a6ff" opacity="0.45">
+    <text x="34" y="67">+</text>
+    <text x="34" y="93">+</text>
+    <text x="34" y="119">+</text>
+  </g>
+  <text x="34" y="144" font-family="'JetBrains Mono', monospace" font-size="11" fill="#00f0ff" opacity="0.9">◆</text>
+
+  <!-- Line 1: $ git status -->
+  <g class="t-line t-l1"><text x="64" y="67" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="13" font-weight="500"><tspan fill="#00f0ff" font-weight="700">root@foxbat-sec:~#</tspan> <tspan fill="#ffffff" font-weight="600">whoami &amp;&amp; target-recon --status</tspan></text></g>
+
+  <!-- Line 2: On branch main • Last commit: Build & run -->
+  <g class="t-line t-l2"><text x="64" y="93" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12.5" font-weight="500"><tspan fill="#79c0ff">[identity] Syed Saeed Al Sefat // 0xRoot</tspan><tspan fill="#58a6ff" font-weight="700">  •  </tspan><tspan fill="#8b949e">Affiliation: </tspan><tspan fill="#ffffff" font-weight="600">Team FoxBat</tspan></text></g>
+
+  <!-- Line 3: > Exploit Scripting, Recon Automation, Threat Intel... + Progress Bar + Keep Coding... 🚀 -->
+  <g class="t-line t-l3">
+    <!-- Action Status -->
+    <text x="64" y="119" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12.5" font-weight="600" fill="#00ff88">
+      &gt; Exploit Scripting, Recon Automation, Threat Intel...
+    </text>
+
+    <!-- Exact Slanted Neon Progress Bar with Cyber Loading Animation -->
+    <g transform="translate(636, 108)">
+      <g transform="skewX(-14)">
+        <!-- Seg 1: Neon Mint Green -->
+        <g transform="translate(0.0, 0)">
+          <rect width="11" height="13" rx="2.2" fill="#3AF8BC" opacity="0.2"/>
+          <rect width="11" height="13" rx="2.2" fill="#3AF8BC" filter="url(#barGlow)">
+            <animate attributeName="opacity" values="1.0;1.0;0.2;0.2" keyTimes="0.0;0.781;0.875;1.0" dur="3.2s" repeatCount="indefinite"/>
+          </rect>
+        </g>
+        <!-- Seg 2 -->
+        <g transform="translate(15.2, 0)">
+          <rect width="11" height="13" rx="2.2" fill="#3CF5C1" opacity="0.2"/>
+          <rect width="11" height="13" rx="2.2" fill="#3CF5C1" filter="url(#barGlow)">
+            <animate attributeName="opacity" values="0.2;0.2;1.0;1.0;0.2;0.2" keyTimes="0.0;0.028;0.034;0.781;0.875;1.0" dur="3.2s" repeatCount="indefinite"/>
+          </rect>
+        </g>
+        <!-- Seg 3 -->
+        <g transform="translate(30.4, 0)">
+          <rect width="11" height="13" rx="2.2" fill="#36F1C7" opacity="0.2"/>
+          <rect width="11" height="13" rx="2.2" fill="#36F1C7" filter="url(#barGlow)">
+            <animate attributeName="opacity" values="0.2;0.2;1.0;1.0;0.2;0.2" keyTimes="0.0;0.062;0.069;0.781;0.875;1.0" dur="3.2s" repeatCount="indefinite"/>
+          </rect>
+        </g>
+        <!-- Seg 4 -->
+        <g transform="translate(45.6, 0)">
+          <rect width="11" height="13" rx="2.2" fill="#2CEEC8" opacity="0.2"/>
+          <rect width="11" height="13" rx="2.2" fill="#2CEEC8" filter="url(#barGlow)">
+            <animate attributeName="opacity" values="0.2;0.2;1.0;1.0;0.2;0.2" keyTimes="0.0;0.097;0.103;0.781;0.875;1.0" dur="3.2s" repeatCount="indefinite"/>
+          </rect>
+        </g>
+        <!-- Seg 5 -->
+        <g transform="translate(60.8, 0)">
+          <rect width="11" height="13" rx="2.2" fill="#1EEED2" opacity="0.2"/>
+          <rect width="11" height="13" rx="2.2" fill="#1EEED2" filter="url(#barGlow)">
+            <animate attributeName="opacity" values="0.2;0.2;1.0;1.0;0.2;0.2" keyTimes="0.0;0.131;0.137;0.781;0.875;1.0" dur="3.2s" repeatCount="indefinite"/>
+          </rect>
+        </g>
+        <!-- Seg 6 -->
+        <g transform="translate(76.0, 0)">
+          <rect width="11" height="13" rx="2.2" fill="#18ECD6" opacity="0.2"/>
+          <rect width="11" height="13" rx="2.2" fill="#18ECD6" filter="url(#barGlow)">
+            <animate attributeName="opacity" values="0.2;0.2;1.0;1.0;0.2;0.2" keyTimes="0.0;0.166;0.172;0.781;0.875;1.0" dur="3.2s" repeatCount="indefinite"/>
+          </rect>
+        </g>
+        <!-- Seg 7 -->
+        <g transform="translate(91.2, 0)">
+          <rect width="11" height="13" rx="2.2" fill="#16E5E5" opacity="0.2"/>
+          <rect width="11" height="13" rx="2.2" fill="#16E5E5" filter="url(#barGlow)">
+            <animate attributeName="opacity" values="0.2;0.2;1.0;1.0;0.2;0.2" keyTimes="0.0;0.2;0.206;0.781;0.875;1.0" dur="3.2s" repeatCount="indefinite"/>
+          </rect>
+        </g>
+        <!-- Seg 8 -->
+        <g transform="translate(106.4, 0)">
+          <rect width="11" height="13" rx="2.2" fill="#19D8FB" opacity="0.2"/>
+          <rect width="11" height="13" rx="2.2" fill="#19D8FB" filter="url(#barGlow)">
+            <animate attributeName="opacity" values="0.2;0.2;1.0;1.0;0.2;0.2" keyTimes="0.0;0.234;0.241;0.781;0.875;1.0" dur="3.2s" repeatCount="indefinite"/>
+          </rect>
+        </g>
+        <!-- Seg 9 -->
+        <g transform="translate(121.6, 0)">
+          <rect width="11" height="13" rx="2.2" fill="#25C7F7" opacity="0.2"/>
+          <rect width="11" height="13" rx="2.2" fill="#25C7F7" filter="url(#barGlow)">
+            <animate attributeName="opacity" values="0.2;0.2;1.0;1.0;0.2;0.2" keyTimes="0.0;0.269;0.275;0.781;0.875;1.0" dur="3.2s" repeatCount="indefinite"/>
+          </rect>
+        </g>
+        <!-- Seg 10 -->
+        <g transform="translate(136.8, 0)">
+          <rect width="11" height="13" rx="2.2" fill="#11BBFB" opacity="0.2"/>
+          <rect width="11" height="13" rx="2.2" fill="#11BBFB" filter="url(#barGlow)">
+            <animate attributeName="opacity" values="0.2;0.2;1.0;1.0;0.2;0.2" keyTimes="0.0;0.303;0.309;0.781;0.875;1.0" dur="3.2s" repeatCount="indefinite"/>
+          </rect>
+        </g>
+        <!-- Seg 11 -->
+        <g transform="translate(152.0, 0)">
+          <rect width="11" height="13" rx="2.2" fill="#28A8F8" opacity="0.2"/>
+          <rect width="11" height="13" rx="2.2" fill="#28A8F8" filter="url(#barGlow)">
+            <animate attributeName="opacity" values="0.2;0.2;1.0;1.0;0.2;0.2" keyTimes="0.0;0.338;0.344;0.781;0.875;1.0" dur="3.2s" repeatCount="indefinite"/>
+          </rect>
+        </g>
+        <!-- Seg 12: Neon Violet-Purple -->
+        <g transform="translate(167.2, 0)">
+          <rect width="11" height="13" rx="2.2" fill="#7868F9" opacity="0.2"/>
+          <rect width="11" height="13" rx="2.2" fill="#7868F9" filter="url(#barGlow)">
+            <animate attributeName="opacity" values="0.2;0.2;1.0;1.0;0.2;0.2" keyTimes="0.0;0.372;0.378;0.781;0.875;1.0" dur="3.2s" repeatCount="indefinite"/>
+          </rect>
+        </g>
+      </g>
+    </g>
+
+    <!-- Keep Learning Callout -->
+    <text x="834" y="119" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" font-weight="600" fill="#e6edf3">
+      Keep Hacking... 🚀
+    </text>
+  </g>
+
+  <!-- Line 4: Blinking Green Block Prompt Cursor -->
+  <g class="t-line t-l4">
+    <rect x="64" y="132" width="9" height="16" rx="1.5" fill="#00ff88">
+      <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>

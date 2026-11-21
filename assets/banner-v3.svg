@@ -1,0 +1,247 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 290" width="1000" height="290" role="img">
+  <title>Atia Sanjida (Oishi) - GitHub Profile Banner</title>
+  <defs>
+    <!-- Deep Obsidian Cyber Background -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040711"/>
+      <stop offset="50%" stop-color="#070c1a"/>
+      <stop offset="100%" stop-color="#050813"/>
+    </linearGradient>
+
+    <!-- Professional Electric Cyber Border Gradient -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff">
+        <animate attributeName="stop-color" values="#00f0ff;#58a6ff;#8957e5;#00f0ff" dur="9s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" stop-color="#58a6ff">
+        <animate attributeName="stop-color" values="#58a6ff;#8957e5;#00f0ff;#58a6ff" dur="9s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#8957e5">
+        <animate attributeName="stop-color" values="#8957e5;#00f0ff;#58a6ff;#8957e5" dur="9s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Name Cyber Electric Gradient -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="45%" stop-color="#70a6ff"/>
+      <stop offset="85%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#00ffc4"/>
+    </linearGradient>
+
+    <!-- Scanning Laser Gradient -->
+    <linearGradient id="laserGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00ff88" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Vignette Behind Text for Pristine High-Contrast Readability -->
+    <linearGradient id="textVignette" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#050813" stop-opacity="0.92"/>
+      <stop offset="65%" stop-color="#050813" stop-opacity="0.86"/>
+      <stop offset="100%" stop-color="#050813" stop-opacity="0.15"/>
+    </linearGradient>
+
+    <!-- Subtle Cyber Grid -->
+    <pattern id="cyberGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#58a6ff" stroke-width="0.7" stroke-opacity="0.04"/>
+    </pattern>
+
+    <!-- Clip Path for inner banner area -->
+    <clipPath id="bannerInnerClip">
+      <rect x="1" y="1" width="998" height="288" rx="17"/>
+    </clipPath>
+
+    <!-- Soft Glow Filter -->
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .role-1, .role-2, .role-3, .role-4 {
+      opacity: 0;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+      animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .role-1 { animation-name: role1; }
+    .role-2 { animation-name: role2; }
+    .role-3 { animation-name: role3; }
+    .role-4 { animation-name: role4; }
+
+    @keyframes role1 {
+      0%        { opacity: 1; transform: translateY(0); }
+      18%       { opacity: 1; transform: translateY(0); }
+      22%       { opacity: 0; transform: translateY(-4px); }
+      23%, 95%  { opacity: 0; transform: translateY(4px); }
+      99%       { opacity: 0.8; transform: translateY(1px); }
+      100%      { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes role2 {
+      0%, 22%   { opacity: 0; transform: translateY(4px); }
+      26%       { opacity: 1; transform: translateY(0); }
+      43%       { opacity: 1; transform: translateY(0); }
+      47%       { opacity: 0; transform: translateY(-4px); }
+      48%, 100% { opacity: 0; transform: translateY(4px); }
+    }
+    @keyframes role3 {
+      0%, 47%   { opacity: 0; transform: translateY(4px); }
+      51%       { opacity: 1; transform: translateY(0); }
+      68%       { opacity: 1; transform: translateY(0); }
+      72%       { opacity: 0; transform: translateY(-4px); }
+      73%, 100% { opacity: 0; transform: translateY(4px); }
+    }
+    @keyframes role4 {
+      0%, 72%   { opacity: 0; transform: translateY(4px); }
+      76%       { opacity: 1; transform: translateY(0); }
+      93%       { opacity: 1; transform: translateY(0); }
+      97%       { opacity: 0; transform: translateY(-4px); }
+      98%, 100% { opacity: 0; transform: translateY(4px); }
+    }
+  </style>
+
+  <!-- Banner Body & Cyber Grid Background -->
+  <rect width="1000" height="290" rx="18" fill="url(#bgGrad)"/>
+  <rect width="1000" height="290" rx="18" fill="url(#cyberGrid)"/>
+
+  <!-- Animated Hacker Binary Matrix Streams (Clipped Inside Banner) -->
+  <g clip-path="url(#bannerInnerClip)">
+    <g transform="translate(35, 0)">
+      <animateTransform attributeName="transform" type="translate" from="35 -320" to="35 320" dur="7.2s" begin="-0.0s" repeatCount="indefinite"/>
+      <text x="0" y="0" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10.5" text-anchor="middle"><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.02" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.04" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.05" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.07" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.08" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.1" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.12" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.14" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.16" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.18" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.2" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.22" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.24" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.37" font-weight="600">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.49" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.61" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.73" font-weight="600">0</tspan><tspan x="0" dy="14" fill="#ffffff" fill-opacity="0.85" font-weight="700">0</tspan></text>
+    </g>
+    <g transform="translate(90, 0)">
+      <animateTransform attributeName="transform" type="translate" from="90 -320" to="90 320" dur="8.5s" begin="-0.65s" repeatCount="indefinite"/>
+      <text x="0" y="0" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10.5" text-anchor="middle"><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.02" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.04" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.05" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.07" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.08" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.1" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.12" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.14" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.16" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.18" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.2" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.22" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.24" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.37" font-weight="600">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.49" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.61" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.73" font-weight="600">0</tspan><tspan x="0" dy="14" fill="#ffffff" fill-opacity="0.85" font-weight="700">0</tspan></text>
+    </g>
+    <g transform="translate(160, 0)">
+      <animateTransform attributeName="transform" type="translate" from="160 -320" to="160 320" dur="6.8s" begin="-1.3s" repeatCount="indefinite"/>
+      <text x="0" y="0" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10.5" text-anchor="middle"><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.02" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.04" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.05" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.07" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.08" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.1" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.12" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.14" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.16" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.18" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.2" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.22" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.24" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.37" font-weight="600">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.49" font-weight="600">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.61" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.73" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#ffffff" fill-opacity="0.85" font-weight="700">1</tspan></text>
+    </g>
+    <g transform="translate(230, 0)">
+      <animateTransform attributeName="transform" type="translate" from="230 -320" to="230 320" dur="9.1s" begin="-1.95s" repeatCount="indefinite"/>
+      <text x="0" y="0" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10.5" text-anchor="middle"><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.02" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.04" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.05" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.07" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.08" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.1" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.12" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.14" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.16" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.18" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.2" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.22" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.24" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.37" font-weight="600">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.49" font-weight="600">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.61" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.73" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#ffffff" fill-opacity="0.85" font-weight="700">1</tspan></text>
+    </g>
+    <g transform="translate(310, 0)">
+      <animateTransform attributeName="transform" type="translate" from="310 -320" to="310 320" dur="7.8s" begin="-2.6s" repeatCount="indefinite"/>
+      <text x="0" y="0" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10.5" text-anchor="middle"><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.02" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.04" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.05" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.07" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.08" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.1" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.12" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.14" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.16" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.18" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.2" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.22" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.24" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.37" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.49" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.61" font-weight="600">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.73" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#ffffff" fill-opacity="0.85" font-weight="700">1</tspan></text>
+    </g>
+    <g transform="translate(400, 0)">
+      <animateTransform attributeName="transform" type="translate" from="400 -320" to="400 320" dur="6.4s" begin="-3.25s" repeatCount="indefinite"/>
+      <text x="0" y="0" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10.5" text-anchor="middle"><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.02" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.04" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.05" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.07" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.08" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.1" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.12" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.14" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.16" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.18" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.2" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.22" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.24" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.37" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.49" font-weight="600">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.61" font-weight="600">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.73" font-weight="600">0</tspan><tspan x="0" dy="14" fill="#ffffff" fill-opacity="0.85" font-weight="700">0</tspan></text>
+    </g>
+    <g transform="translate(490, 0)">
+      <animateTransform attributeName="transform" type="translate" from="490 -320" to="490 320" dur="8.8s" begin="-3.9s" repeatCount="indefinite"/>
+      <text x="0" y="0" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10.5" text-anchor="middle"><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.02" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.04" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.05" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.07" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.08" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.1" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.12" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.14" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.16" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.18" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.2" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.22" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.24" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.37" font-weight="600">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.49" font-weight="600">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.61" font-weight="600">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.73" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#ffffff" fill-opacity="0.85" font-weight="700">0</tspan></text>
+    </g>
+    <g transform="translate(580, 0)">
+      <animateTransform attributeName="transform" type="translate" from="580 -320" to="580 320" dur="7.5s" begin="-0.55s" repeatCount="indefinite"/>
+      <text x="0" y="0" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10.5" text-anchor="middle"><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.02" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.04" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.05" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.07" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.08" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.1" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.12" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.14" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.16" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.18" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.2" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.22" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.24" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.37" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.49" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.61" font-weight="600">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.73" font-weight="600">0</tspan><tspan x="0" dy="14" fill="#ffffff" fill-opacity="0.85" font-weight="700">0</tspan></text>
+    </g>
+    <g transform="translate(670, 0)">
+      <animateTransform attributeName="transform" type="translate" from="670 -320" to="670 320" dur="8.1s" begin="-1.2s" repeatCount="indefinite"/>
+      <text x="0" y="0" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10.5" text-anchor="middle"><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.02" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.04" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.05" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.07" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.08" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.1" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.12" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.14" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.16" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.18" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.2" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.22" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.24" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.37" font-weight="600">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.49" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.61" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.73" font-weight="600">0</tspan><tspan x="0" dy="14" fill="#ffffff" fill-opacity="0.85" font-weight="700">0</tspan></text>
+    </g>
+    <g transform="translate(750, 0)">
+      <animateTransform attributeName="transform" type="translate" from="750 -320" to="750 320" dur="6.9s" begin="-1.85s" repeatCount="indefinite"/>
+      <text x="0" y="0" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10.5" text-anchor="middle"><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.02" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.04" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.05" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.07" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.08" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.1" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.12" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.14" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.16" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.18" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.2" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.22" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.24" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.37" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.49" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.61" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.73" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#ffffff" fill-opacity="0.85" font-weight="700">1</tspan></text>
+    </g>
+    <g transform="translate(830, 0)">
+      <animateTransform attributeName="transform" type="translate" from="830 -320" to="830 320" dur="9.4s" begin="-2.5s" repeatCount="indefinite"/>
+      <text x="0" y="0" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10.5" text-anchor="middle"><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.02" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.04" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.05" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.07" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.08" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.1" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.12" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.14" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.16" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.18" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.2" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.22" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.24" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.37" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.49" font-weight="600">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.61" font-weight="600">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.73" font-weight="600">0</tspan><tspan x="0" dy="14" fill="#ffffff" fill-opacity="0.85" font-weight="700">0</tspan></text>
+    </g>
+    <g transform="translate(910, 0)">
+      <animateTransform attributeName="transform" type="translate" from="910 -320" to="910 320" dur="7.0s" begin="-3.15s" repeatCount="indefinite"/>
+      <text x="0" y="0" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10.5" text-anchor="middle"><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.02" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.04" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.05" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.07" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.08" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.1" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.12" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.14" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.16" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.18" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.2" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.22" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.24" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.37" font-weight="600">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.49" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.61" font-weight="600">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.73" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#ffffff" fill-opacity="0.85" font-weight="700">0</tspan></text>
+    </g>
+    <g transform="translate(965, 0)">
+      <animateTransform attributeName="transform" type="translate" from="965 -320" to="965 320" dur="8.3s" begin="-3.8s" repeatCount="indefinite"/>
+      <text x="0" y="0" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="10.5" text-anchor="middle"><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.02" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.03" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.04" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.05" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.06" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.07" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#388bfd" fill-opacity="0.08" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.1" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.12" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.14" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.16" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.18" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.2" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.22" font-weight="400">1</tspan><tspan x="0" dy="14" fill="#58a6ff" fill-opacity="0.24" font-weight="400">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.37" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.49" font-weight="600">0</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.61" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#00f0ff" fill-opacity="0.73" font-weight="600">1</tspan><tspan x="0" dy="14" fill="#ffffff" fill-opacity="0.85" font-weight="700">1</tspan></text>
+    </g>
+
+
+  </g>
+
+  <!-- High-Contrast Vignette behind Main Content -->
+  <rect x="170" y="46" width="800" height="160" rx="16" fill="url(#textVignette)"/>
+
+  <!-- Glowing Outer Border -->
+  <rect x="1" y="1" width="998" height="288" rx="18" fill="none" stroke="url(#borderGrad)" stroke-width="1.8"/>
+
+  <!-- Tactical Corner Accents -->
+  <path d="M 8 24 L 8 8 L 24 8" fill="none" stroke="#00f0ff" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <path d="M 992 24 L 992 8 L 976 8" fill="none" stroke="#00f0ff" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <path d="M 8 266 L 8 282 L 24 282" fill="none" stroke="#00f0ff" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+  <path d="M 992 266 L 992 282 L 976 282" fill="none" stroke="#00f0ff" stroke-width="2" stroke-linecap="round" opacity="0.8"/>
+
+  <!-- Status Badge in Top Right Corner -->
+  <g transform="translate(680, 24)">
+    <rect width="290" height="26" rx="13" fill="#091220" stroke="#1f4068" stroke-width="1.2"/>
+    <circle cx="16" cy="13" r="4" fill="#00f0ff">
+      <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="30" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#79c0ff" letter-spacing="0.5">B.SC. ICE • SYSTEMS &amp; SECURITY 🛡️</text>
+  </g>
+
+  <!-- Monogram Box with Cyber Neon Frame -->
+  <g transform="translate(48, 54)">
+    <rect width="112" height="112" rx="20" fill="#070d1a" stroke="url(#borderGrad)" stroke-width="1.8" filter="url(#softGlow)"/>
+    <path d="M42 46 L30 56 L42 66" fill="none" stroke="#00f0ff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M70 46 L82 56 L70 66" fill="none" stroke="#70a6ff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="58" y1="44" x2="54" y2="68" stroke="#00ff88" stroke-width="3.2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Greeting & Name -->
+  <g transform="translate(190, 82)">
+    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="600" fill="#79c0ff" letter-spacing="1.5">
+      HI THERE, I'M
+    </text>
+    <text x="0" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800" fill="url(#textGrad)" letter-spacing="0.5">
+      Atia Sanjida (Oishi)
+    </text>
+    <text x="350" y="34" font-size="28">👋</text>
+  </g>
+
+  <!-- Dynamic Cycling Roles (Exact Authentic Roles Preserved) -->
+  <g transform="translate(190, 154)">
+    <g class="role-1">
+      <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="600" fill="#e6edf3">
+        🛡️ <tspan fill="#58a6ff" font-weight="700">Security Researcher</tspan> <tspan fill="#8b949e">•</tspan> <tspan fill="#c9d1d9">Cybersecurity &amp; Ethical Hacking </tspan>
+      </text>
+    </g>
+    <g class="role-2">
+      <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="600" fill="#e6edf3">
+        💻 <tspan fill="#39d353" font-weight="700">Currently Learning</tspan> <tspan fill="#8b949e">•</tspan> <tspan fill="#c9d1d9">Systems Engineering  &amp; Computer network</tspan>
+      </text>
+    </g>
+    <g class="role-3">
+      <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="600" fill="#e6edf3">
+        🤖 <tspan fill="#39d353" font-weight="700">Exploring </tspan> <tspan fill="#8b949e">•</tspan> <tspan fill="#c9d1d9"> python  &amp; AI/ML</tspan>
+      </text>
+    </g>
+    <g class="role-4">
+      <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="600" fill="#e6edf3">
+        🎓 <tspan fill="#f0883e" font-weight="700">B.Sc. </tspan> <tspan fill="#8b949e">•</tspan> <tspan fill="#c9d1d9">Information &amp; Communication Engineering</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- Tagline Quote -->
+  <g transform="translate(48, 222)">
+    <rect width="904" height="42" rx="10" fill="#070c18" fill-opacity="0.95" stroke="#1f2c42" stroke-width="1"/>
+    <text x="24" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="400" fill="#8b949e">
+      🎓 <tspan fill="#c9d1d9" font-weight="500">"B.Sc.  in Information &amp; Communication Engineering | exploring Systems, Security, and Agentic AI."</tspan>
+    </text>
+  </g>
+
+  <!-- Sweeping Laser Scanning Beam -->
+  <rect x="0" y="286" width="200" height="3" rx="1.5" fill="url(#laserGrad)">
+    <animate attributeName="x" values="0;800;0" dur="4.8s" repeatCount="indefinite"/>
+  </rect>
+</svg>
