@@ -1,9 +1,5 @@
 <div align="center">
 
-<p align="center">
-  <img src="assets/curtroder-logo.png" alt="Curtroder Logo" width="160" style="border-radius: 50%; box-shadow: 0 0 25px #00f0ff;"/>
-</p>
-
 <img src="assets/banner-v7.svg" alt="Syed Saeed Al Sefat - GitHub Banner" width="100%"/>
 
 <br/><br/>
