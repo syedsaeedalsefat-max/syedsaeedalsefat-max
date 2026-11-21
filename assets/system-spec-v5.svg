@@ -113,7 +113,7 @@
   <circle cx="42" cy="19" r="5" fill="#ffbd2e"/>
   <circle cx="60" cy="19" r="5" fill="#27c93f"/>
 
-  <text x="500" y="24" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" font-weight="600" fill="#8b949e" text-anchor="middle">syed@foxbat_sec: ~ (fastfetch --profile overview)</text>
+  <text x="500" y="24" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="12" font-weight="600" fill="#8b949e" text-anchor="middle">syed@Curtroder: ~ (fastfetch --profile overview)</text>
 
   <circle cx="910" cy="19" r="4" fill="#3fb950">
     <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
@@ -238,7 +238,7 @@
   <g transform="translate(315, 100)">
     <!-- typed command -->
     <text x="0" y="18" font-family="'JetBrains Mono', monospace" font-size="13.5" font-weight="500" clip-path="url(#typeClip)">
-      <tspan fill="#3fb950" font-weight="700">syed@foxbat_sec</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff" font-weight="700">~</tspan><tspan fill="#8b949e">$</tspan> <tspan fill="#f0f6fc" font-weight="600">fastfetch --profile overview</tspan>
+      <tspan fill="#3fb950" font-weight="700">syed@Curtroder</tspan><tspan fill="#8b949e">:</tspan><tspan fill="#58a6ff" font-weight="700">~</tspan><tspan fill="#8b949e">$</tspan> <tspan fill="#f0f6fc" font-weight="600">fastfetch --profile overview</tspan>
     </text>
     <line x1="0" y1="30" x2="655" y2="30" stroke="#21262d" stroke-width="1"/>
 

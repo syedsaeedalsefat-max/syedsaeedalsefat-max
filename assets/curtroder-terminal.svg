@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="1000" height="500" role="img">
+  <title>Curtroder - Futuristic Termux Theme</title>
+  <defs>
+    <!-- Dark Termux Cyber Window Background -->
+    <linearGradient id="termuxBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#040711"/>
+      <stop offset="50%" stop-color="#070c1a"/>
+      <stop offset="100%" stop-color="#050814"/>
+    </linearGradient>
+
+    <!-- Neon Cyan to Mint Border Glow -->
+    <linearGradient id="curtroderBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="50%" stop-color="#00ff88"/>
+      <stop offset="100%" stop-color="#388bfd"/>
+    </linearGradient>
+
+    <!-- Glowing Filter -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="textGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="1.8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Binary Matrix Background Pattern -->
+    <pattern id="matrixPattern" width="300" height="80" patternUnits="userSpaceOnUse">
+      <text x="10" y="20" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="9" fill="#00ff88" fill-opacity="0.04" letter-spacing="2">01000011 01010101 01010010 01010100</text>
+      <text x="30" y="45" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="9" fill="#00f0ff" fill-opacity="0.035" letter-spacing="2">01010010 01001111 01000100 01000101</text>
+      <text x="15" y="70" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="9" fill="#00ff88" fill-opacity="0.04" letter-spacing="2">01010011 01011001 01000101 01000100</text>
+    </pattern>
+  </defs>
+
+  <style>
+    .font-mono {
+      font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    }
+    @keyframes cursorBlink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    .cursor {
+      animation: cursorBlink 0.9s infinite;
+    }
+    @keyframes loadPulse {
+      0% { opacity: 0.65; }
+      50% { opacity: 1; }
+      100% { opacity: 0.65; }
+    }
+    .load-bar {
+      animation: loadPulse 2.2s infinite ease-in-out;
+    }
+  </style>
+
+  <!-- Terminal Window Canvas -->
+  <rect width="1000" height="500" rx="14" fill="url(#termuxBg)"/>
+  <rect width="1000" height="500" rx="14" fill="url(#matrixPattern)"/>
+  <rect x="1" y="1" width="998" height="498" rx="13" fill="none" stroke="url(#curtroderBorder)" stroke-width="1.6" filter="url(#neonGlow)"/>
+
+  <!-- Window Header Bar -->
+  <line x1="1" y1="36" x2="999" y2="36" stroke="#182338" stroke-width="1"/>
+  <circle cx="28" cy="18" r="5" fill="#ff5f56"/>
+  <circle cx="44" cy="18" r="5" fill="#ffbd2e"/>
+  <circle cx="60" cy="18" r="5" fill="#27c93f"/>
+
+  <!-- Title Center -->
+  <text x="500" y="23" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" fill="#8b949e" text-anchor="middle">
+    syed@Curtroder: ~ (Termux Shell Session)
+  </text>
+
+  <!-- Right Pill: Curtroder Theme Online -->
+  <circle cx="862" cy="18" r="4.5" fill="#00ff88">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <text x="874" y="22" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="700" fill="#00ff88" letter-spacing="0.5">
+    CURTRODER v1.0
+  </text>
+
+  <!-- Step 1: Loading Sequence -->
+  <g class="font-mono" transform="translate(36, 62)">
+    <text x="0" y="0" font-size="13" font-weight="700" fill="#00ff88">Syed Saeed Al Sefat ♚</text>
+    <text x="0" y="18" font-size="12" font-weight="500" fill="#ffbd2e">Please wait a moment. system is loading...</text>
+    
+    <text x="0" y="38" font-size="12" font-weight="700" fill="#ff5555">#loading [</text>
+    <text x="82" y="38" font-size="12" font-weight="700" fill="#00ff88" class="load-bar">████████████████████</text>
+    <text x="242" y="38" font-size="12" font-weight="700" fill="#ff5555">] #Done</text>
+  </g>
+
+  <!-- Step 2: Welcome Message -->
+  <g class="font-mono" transform="translate(36, 126)">
+    <text x="0" y="0" font-size="13" font-weight="700" fill="#00ff88">Welcome Syed Saeed Al Sefat ♚</text>
+    <text x="0" y="18" font-size="12" font-weight="600" fill="#00f0ff">System is ready.</text>
+    <text x="0" y="36" font-size="12" font-weight="500" fill="#00ff88">Now you can complete your mission.</text>
+  </g>
+
+  <!-- Step 3: Centered ASCII Art Banner -->
+  <g class="font-mono" font-size="11" font-weight="700" fill="#00f0ff" filter="url(#textGlow)" text-anchor="middle" transform="translate(500, 202)">
+    <text x="0" y="0"> ███████╗██╗   ██╗███████╗██████╗ </text>
+    <text x="0" y="14"> ██╔════╝╚██╗ ██╔╝██╔════╝██╔══██╗</text>
+    <text x="0" y="28"> ███████╗ ╚████╔╝ █████╗  ██║  ██║</text>
+    <text x="0" y="42"> ╚════██║  ╚██╔╝  ██╔══╝  ██║  ██║</text>
+    <text x="0" y="56"> ███████║   ██║   ███████╗██████╔╝</text>
+    <text x="0" y="70"> ╚══════╝   ╚═╝   ╚══════╝╚═════╝ </text>
+  </g>
+
+  <!-- Step 4: Curtroder Info Box & Metadata -->
+  <g class="font-mono" text-anchor="middle" transform="translate(500, 300)">
+    <text x="0" y="0" font-size="12.5" font-weight="700" fill="#58a6ff">
+      Developed By Syed Saeed Al Sefat ♚ | Team FoxBat | Curtroder
+    </text>
+    <text x="0" y="18" font-size="11.5" font-weight="600" fill="#ffbd2e">
+      © Copyright 2026 — All Rights Reserved.
+    </text>
+    <text x="0" y="36" font-size="12" font-weight="500" fill="#ff5555" font-style="italic">
+      "I am completely destroyed. Error 304 Not Modified."
+    </text>
+    <text x="0" y="56" font-size="11.5" font-weight="600" fill="#ff7b72">
+      📅 Friday, 21 November 2026  |  ⏰ Active Session (UTC+8)
+    </text>
+    <text x="0" y="76" font-size="12" font-weight="700" fill="#00ff88">
+      🌐 IP Address: 127.0.0.1 // 0xRoot (Encrypted Node)
+    </text>
+  </g>
+
+  <!-- Step 5: Curtroder Custom Command Prompt (PS1) -->
+  <g class="font-mono" transform="translate(36, 420)">
+    <!-- Line 1 of PS1: ┌─[time]─[user@Curtroder]──[~/Team-FoxBat] -->
+    <text x="0" y="0" font-size="13" font-weight="600">
+      <tspan fill="#00f0ff">┌─[</tspan><tspan fill="#00ff88">18:30:00</tspan><tspan fill="#00f0ff">]─[</tspan><tspan fill="#00ff88">syed@Curtroder</tspan><tspan fill="#00f0ff">]──[</tspan><tspan fill="#79c0ff">~/Team-FoxBat</tspan><tspan fill="#00f0ff">]</tspan>
+    </text>
+    <!-- Line 2 of PS1: └─> command with blinking cursor -->
+    <text x="0" y="24" font-size="13" font-weight="600">
+      <tspan fill="#00f0ff">└─&gt;</tspan> <tspan fill="#ffffff" font-weight="500">python3 -m curtroder --active-mission</tspan>
+    </text>
+    <rect x="366" y="11" width="9" height="15" rx="1.5" fill="#00ff88" class="cursor"/>
+  </g>
+</svg>
