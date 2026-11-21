@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner-v7.svg" alt="Syed Saeed Al Sefat - GitHub Banner" width="100%"/>
+<img src="assets/banner-v7.svg?v=skull1" alt="Syed Saeed Al Sefat - GitHub Banner" width="100%"/>
 
 <br/><br/>
 <a href="https://github.com/syedsaeedalsefat-max" target="_blank" title="GitHub">
